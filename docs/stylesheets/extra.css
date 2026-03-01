@@ -1,0 +1,105 @@
+/* Absolutely Plausible — Cyberpunk Futuristic Theme */
+
+:root {
+  --ap-bg: #0d0d0d;
+  --ap-primary: #00ff9f;
+  --ap-accent: #ff003c;
+  --ap-secondary: #7b2fff;
+  --ap-surface: #111827;
+  --ap-border: #1f2937;
+  --ap-text: #e0e0e0;
+  --ap-muted: #6b7280;
+
+  --md-primary-fg-color: #00ff9f;
+  --md-primary-bg-color: #0d0d0d;
+  --md-accent-fg-color: #ff003c;
+  --md-default-bg-color: #0d0d0d;
+  --md-default-fg-color: #e0e0e0;
+  --md-code-bg-color: #111827;
+}
+
+/* Header */
+.md-header {
+  background-color: #0d0d0d;
+  border-bottom: 1px solid #00ff9f33;
+}
+
+.md-header__title {
+  color: #00ff9f;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Navigation */
+.md-nav__link--active,
+.md-nav__link:hover {
+  color: #00ff9f;
+}
+
+.md-tabs__link--active {
+  color: #00ff9f;
+}
+
+/* Content */
+.md-content {
+  background-color: #0d0d0d;
+}
+
+h1, h2, h3 {
+  color: #e0e0e0;
+}
+
+h1 { border-bottom: 1px solid #00ff9f44; padding-bottom: 0.3em; }
+
+a {
+  color: #00ff9f;
+}
+
+a:hover {
+  color: #ff003c;
+}
+
+/* Code blocks */
+code {
+  background-color: #111827;
+  color: #00ff9f;
+  border: 1px solid #1f2937;
+}
+
+/* Admonitions — cyberpunk style */
+.admonition {
+  border-left: 4px solid #00ff9f;
+  background-color: #111827;
+}
+
+.admonition.warning {
+  border-left-color: #ff003c;
+}
+
+.admonition.note {
+  border-left-color: #7b2fff;
+}
+
+/* Task list checkboxes */
+.task-list-indicator::before {
+  background-color: #7b2fff;
+}
+
+/* Tables */
+.md-typeset table:not([class]) {
+  border: 1px solid #1f2937;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: #111827;
+  color: #00ff9f;
+}
+
+.md-typeset table:not([class]) tr:hover {
+  background-color: #111827;
+}
+
+/* Footer */
+.md-footer {
+  background-color: #0d0d0d;
+  border-top: 1px solid #1f2937;
+}
