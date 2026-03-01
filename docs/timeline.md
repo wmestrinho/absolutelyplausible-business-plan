@@ -1,207 +1,174 @@
 # 6-Month Timeline — Robot Fantôme Ventures
 
 **Start date:** 2026-03-01
-**North star:** $3,000-5,000/mo by September 2026
-**Constraint:** Mechanic work continues as primary income — all online work fits around it
+**North star:** $3,000-5,000/mo online income by September 2026
+**Constraint:** PCJ mechanic work continues. All online work fits in 10-15 hours/week.
 
 ---
 
 ## Month 1 — March 2026: First Dollars
 
-> *"Revenue Week 1. Everything else follows."*
+> *"Prove people will pay. Everything else is noise."*
 
-### Week 1 (Mar 1-7) — Ship & Sell
+**Max 5 tasks per week. Revenue tasks first.**
 
-**hackFatura**
+### Week 1 — Validate & Sell
 
-- [ ] Redeploy Code.gs (GET-based, no-CORS) — confirm Sheets backend works end-to-end
-- [ ] Set up DNS CNAME → `mech.robotfantome.com` live
-- [ ] Test full workflow: create event → log work → generate invoice → verify in Sheets
-- [ ] Identify 3 mechanics who'd pay $300-500 for a custom-branded version
-- [ ] DM or call them: "Hey, I built this invoicing app for trackside work. Want me to set one up?"
+- [ ] Fix hackFatura backend (redeploy Code.gs, verify Sheets end-to-end)
+- [ ] Contact 3 mechanics about custom hackFatura builds ($500)
+- [ ] Contact 3 small business owners about AI Audits ($200)
+- [ ] Write + publish first LinkedIn post
+- [ ] Record 15-sec intro + 30-sec outro clips (robot fantôme)
 
-**Consulting**
+### Week 2 — First Delivery + Digital Product
 
-- [ ] Write consulting offer: AI Audit ($150), Workflow Build ($500-2k), Zero-Cost MVP ($2-5k)
-- [ ] Identify 5 people in your network running small businesses
-- [ ] Reach out to 3: "I'm offering AI business audits — 30 min, I'll tell you what you can automate."
-- [ ] Book and deliver first AI Audit
+- [ ] Deliver first AI Audit ($200)
+- [ ] Create "Zero-Cost Business App Blueprint" on Gumroad ($29)
+- [ ] Publish 2 LinkedIn posts
+- [ ] Start first custom hackFatura build (if mechanic committed)
 
-**Content**
+### Week 3 — Website + Booking
 
-- [ ] Publish first LinkedIn post: "I built my own business app in one night for $0/month. Here's how."
-- [ ] Set up Gumroad account (free)
+- [ ] Deploy robotfantome.com v1 (Astro + GitHub Pages)
+- [ ] Set up DNS: `mech.robotfantome.com`
+- [ ] 2 LinkedIn posts
+- [ ] Follow up all leads
 
-**Music**
+### Week 4 — Compound + Review
 
-- [ ] Record 15-second intro and 30-second outro from existing robot fantôme tracks
-
-### Week 2 (Mar 8-14) — Digital Product + Content Rhythm
-
-**Content**
-
-- [ ] Create "Zero-Cost Business App Blueprint" ($19-29 on Gumroad)
-- [ ] Publish 2 more LinkedIn posts
-- [ ] Share Gumroad product on LinkedIn, Twitter, communities
-
-**hackFatura**
-
-- [ ] If first mechanic said yes → deliver custom build (swap branding, set up Sheets, deploy)
-- [ ] Document process as a repeatable playbook
-
-**Consulting**
-
-- [ ] Deliver 1-2 AI Audits
-- [ ] If any audit leads to project → scope and quote it
-
-### Week 3 (Mar 15-21) — robotfantome.com + Scale Outreach
-
-**Brand**
-
-- [ ] Deploy robotfantome.com v1 (hero + `/consulting` + `/hackfatura` + `/music`)
-- [ ] Booking link: Cal.com OSS or Calendly free tier
-
-**Content**
-
-- [ ] LinkedIn: 3 posts this week
-- [ ] Record first YouTube video: "I built a business app for $0/month"
-- [ ] Set up newsletter (Buttondown free or Listmonk self-hosted)
-
-**Consulting**
-
-- [ ] Post on Upwork/Fiverr to build reviews (1-2 quick gigs)
-
-### Week 4 (Mar 22-28) — Compound + Plan April
-
-- [ ] 1-3 custom builds delivered or in pipeline
-- [ ] LinkedIn: maintain 3x/week
-- [ ] Publish YouTube video #1
-- [ ] Newsletter issue #1 (recap: what you built, learned, earned)
-- [ ] Update STRATEGY.md + TIMELINE.md with actual numbers
+- [ ] Deliver builds/audits in pipeline
+- [ ] Set up Buttondown newsletter
+- [ ] Monthly retrospective: actual revenue vs target
 
 ### March Targets
 
-| Metric | Target |
-|--------|--------|
-| Revenue (total) | $500-2,000 |
-| hackFatura custom builds sold | 1-3 |
-| AI Audits delivered | 3-5 |
-| LinkedIn posts published | 8-10 |
-| Gumroad product live | ✅ |
-| robotfantome.com live | ✅ |
-| YouTube videos | 1 |
-| Newsletter subscribers | 25-50 |
+| Metric | Minimum | Stretch |
+|--------|---------|---------|
+| Revenue | $700 | $2,000 |
+| AI Audits delivered | 2 | 4 |
+| hackFatura builds sold | 0 | 2 |
+| LinkedIn posts | 6 | 8 |
+| Gumroad product | Live | 5+ sales |
+| robotfantome.com | Live | With booking |
 
 ---
 
-## Month 2 — April 2026: Build Rhythm
+## Month 2 — April: Build the Machine
 
-> *"Systems, not sprints. Consistency over intensity."*
+> *"Systems, not sprints."*
 
-- [ ] Custom builds on demand ($300-500 each)
-- [ ] Start SaaS dev: Google OAuth, tenant isolation, Stripe, onboarding flow
-- [ ] LinkedIn: 3-4x/week | YouTube: 2 videos | Newsletter: weekly (target 100 subs)
-- [ ] Push for first retainer client ($500-1,000/mo)
-- [ ] Second Gumroad product: "Google Apps Script for Business" ($29-39)
+- [ ] 3-4 audits + 1-2 projects
+- [ ] Push for first retainer client ($750-1,500/mo)
+- [ ] hackFatura builds on demand ($500 each)
+- [ ] LinkedIn 2x/week, newsletter 2x/month
+- [ ] First YouTube video, first case study
 
-### April Targets
-
-| Metric | Target |
-|--------|--------|
-| Revenue (total) | $1,500-4,000 |
-| hackFatura SaaS beta | Live |
-| First retainer client | ✅ |
-| Newsletter subscribers | 100 |
+| Metric | Minimum | Stretch |
+|--------|---------|---------|
+| Revenue | $1,200 | $3,500 |
+| First retainer | Pitched | Signed |
+| Newsletter subs | 50 | 100 |
 
 ---
 
-## Month 3 — May 2026: SaaS Launch + Scale Consulting
+## Month 3 — May: Real Recurring Revenue
 
-> *"Real MRR. Real clients. Real brand."*
+> *"Retainers are the game."*
 
-- [ ] Launch hackFatura SaaS: Starter ($9/mo) + Pro ($29/mo) + Team ($59/mo)
-- [ ] Target: 10 paying users by end of month
-- [ ] 2+ retainer clients ($1,000-2,000/mo recurring)
-- [ ] Guest appearance: karting podcast, Twitter Space, or dev community event
+- [ ] Target: 2 retainer clients ($1,500-3,000/mo recurring)
+- [ ] **SaaS Decision Gate:** 5+ builds sold + people asking to sign up online?
+    - YES → Start SaaS development
+    - NO → Keep selling custom builds
+- [ ] Second Gumroad product ($39)
+- [ ] Guest appearance (podcast, Twitter Space, etc.)
 
-### May Targets
-
-| Metric | Target |
-|--------|--------|
-| Revenue (total) | $2,000-5,000 |
-| hackFatura MRR | $100-300 |
-| Consulting MRR (retainers) | $1,000-2,000 |
+| Metric | Minimum | Stretch |
+|--------|---------|---------|
+| Revenue | $2,000 | $5,000 |
+| Consulting MRR | $750 | $2,000 |
+| Newsletter subs | 150 | 250 |
 
 ---
 
-## Month 4 — June 2026: Double Down on Winners
+## Month 4 — June: Double Down on Winners
 
 > *"Cut what doesn't work. Pour fuel on what does."*
 
-- [ ] 15-25 hackFatura users total
-- [ ] If Google Sheets hitting limits → PocketBase/Supabase migration
-- [ ] Identify top 3 performing content topics → create more
-- [ ] 3+ retainer clients
-- [ ] Gumroad product #3: "AI Automation Playbook for Small Business" ($39-49)
+- [ ] Winning stream gets 50% of time
+- [ ] 3+ retainer clients — if at capacity, raise prices 25%
+- [ ] hackFatura SaaS beta (if gate passed) or continued custom builds
+- [ ] Content repurposing: 1 YouTube → LinkedIn → newsletter
 
-### June Targets
-
-| Metric | Target |
-|--------|--------|
-| Revenue (total) | $3,000-6,500 |
-| hackFatura MRR | $200-500 |
-| Consulting MRR | $1,500-3,000 |
+| Metric | Minimum | Stretch |
+|--------|---------|---------|
+| Revenue | $2,500 | $6,500 |
+| Consulting MRR | $1,500 | $3,000 |
 
 ---
 
-## Month 5 — July 2026: Leverage + Course Prep
+## Month 5 — July: Leverage
 
 > *"Work ON the business, not IN it."*
 
-- [ ] Self-serve hackFatura onboarding (no manual setup)
-- [ ] Course development: "Build Your Business Tools with AI" — 50% recorded
-- [ ] 3-4 retainer clients ($1,500-4,000/mo recurring)
+- [ ] Systemize consulting delivery (reduce per-project time 30%)
+- [ ] hackFatura SEO + self-serve onboarding (if SaaS)
+- [ ] **Course Decision Gate:** 500+ newsletter subs?
+    - YES → Begin course development
+    - NO → Skip course, keep growing audience
 
-### July Targets
-
-| Metric | Target |
-|--------|--------|
-| Revenue (total) | $3,500-7,500 |
-| Course: 50% complete | ✅ |
+| Metric | Minimum | Stretch |
+|--------|---------|---------|
+| Revenue | $3,000 | $7,500 |
+| Consulting MRR | $2,000 | $4,000 |
 
 ---
 
-## Month 6 — August 2026: Launch + Compound
+## Month 6 — August: The Flywheel Spins
 
-> *"The flywheel is spinning. Everything feeds everything."*
+> *"Everything feeds everything."*
 
-- [ ] **Course launch:** "Build Your Business Tools with AI" ($99-149) — target 30-50 sales
-- [ ] Newsletter: 750+ subscribers, first sponsor deal
-- [ ] Music: EP fully online, consider new single with course launch
+- [ ] Course launch (if built) — target 20-30 sales ($2,000-4,500)
 - [ ] 4+ retainer clients
+- [ ] Newsletter sponsor deal (if 500+ subs)
+- [ ] New single release timed with product launch
+- [ ] Portfolio: 4+ case studies on robotfantome.com
 
-### August Targets
-
-| Metric | Target |
-|--------|--------|
-| Revenue (total) | $5,000-12,000+ |
-| Course launch revenue | $3,000-7,500 |
-| hackFatura MRR | $400-800 |
+| Metric | Minimum | Stretch |
+|--------|---------|---------|
+| Revenue | $3,500 | $12,000 |
+| Consulting MRR | $2,500 | $5,000 |
+| hackFatura MRR | $300 | $800 |
 
 ---
 
 ## 6-Month Revenue Summary
 
-| Month | hackFatura | Consulting | Content/Products | Total |
-|-------|-----------|------------|-----------------|-------|
-| Mar | $300-1,000 | $300-950 | $50-150 | **$650-2,100** |
-| Apr | $300-750 | $650-2,600 | $100-300 | **$1,050-3,650** |
-| May | $100-300 MRR | $1,150-3,600 | $150-400 | **$1,400-4,300** |
-| Jun | $200-500 | $1,500-3,000 | $200-500 | **$1,900-4,000** |
-| Jul | $300-700 | $2,000-4,000 | $300-600 | **$2,600-5,300** |
-| Aug | $400-800 | $2,500-5,000 | $3,300-8,200 | **$6,200-14,000** |
+| Month | hackFatura | Consulting | Content | Total |
+|-------|-----------|------------|---------|-------|
+| Mar | $500 | $400-1,350 | $50-200 | **$950-2,050** |
+| Apr | $500-1,000 | $950-3,100 | $100-300 | **$1,550-4,400** |
+| May | $500-1,000 | $1,700-4,600 | $100-400 | **$2,300-6,000** |
+| Jun | $500-1,000 | $2,000-5,000 | $100-500 | **$2,600-6,500** |
+| Jul | $500-1,000 | $2,500-5,500 | $200-600 | **$3,200-7,100** |
+| Aug | $500-1,000 | $2,500-6,000 | $200-4,500 | **$3,200-11,500** |
 
-**6-month cumulative: $14,000-33,000**
+**6-month cumulative: $14,000-37,500**
+
+---
+
+## Weekly Rhythm
+
+| Day | Focus |
+|-----|-------|
+| **Sunday** | Plan + review, batch write LinkedIn posts |
+| **Monday** | Consulting (audits, projects, calls) |
+| **Tuesday** | hackFatura (dev, builds, support) |
+| **Wednesday** | Outreach (follow-ups, DMs, networking) |
+| **Thursday** | Content (YouTube, newsletter, Gumroad) |
+| **Friday** | Consulting (delivery, proposals) |
+| **Saturday** | Karting — USE hackFatura, NETWORK, SELL |
+
+**Travel weeks:** Outreach + follow-ups only. Don't try to build.
 
 ---
 

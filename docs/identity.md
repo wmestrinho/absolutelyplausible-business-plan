@@ -15,7 +15,7 @@ Traveling mechanic. Freelance developer. AI builder. Musician.
 - **Timezone:** America/New_York (EST)
 - **Values:** 100% open-source, zero-waste/zero-pollution, privacy-first
 - **Working style:** Direct, lean, bias toward action
-- **Unfair advantage:** 19 years in karting mechanics + ships real software + AI-native + original music
+- **Unfair advantage:** Deep karting industry access (via PCJ/Thiago, 19 years in the field) + ships real software + AI-native + original music
 
 ## robot fantôme
 

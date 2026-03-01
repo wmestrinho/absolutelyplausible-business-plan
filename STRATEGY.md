@@ -2,10 +2,10 @@
 
 > *"A mechanic who codes, builds AI agents, and plays punk rock walks into a market gap..."*
 
-**Author:** Fantome 👻 + Luiz Mestrinho
+**Author:** Fantome + Luiz Mestrinho
 **Created:** 2026-03-01
 **Last updated:** 2026-03-01
-**Review cycle:** Monthly
+**Review cycle:** Monthly (first Sunday of each month)
 
 ---
 
@@ -26,139 +26,148 @@ See `BRAND.md` for full visual identity guide.
 
 ---
 
+## Financial Reality Check
+
+Before strategy, set the floor:
+
+| | Amount | Notes |
+|---|---|---|
+| **Monthly survival minimum** | $1,750/mo | Rent + food + bills + car payment + supplies |
+| **Mechanic income** | $750/mo | Current baseline from PCJ |
+| **Online income needed** | $1,500/mo | What the gap is (or what replaces mechanic work) |
+| **Runway without mechanic work** | 0-1 months | No meaningful savings buffer |
+
+**Rule:** Mechanic work stays — period. PCJ is the foundation, not something to quit. Online revenue is additive income, not a replacement plan. No burning bridges. No gambling.
+
+---
+
 ## The Unfair Advantage
 
 Most founders have one skill. You have a rare stack:
 
-- **19 years** in niche motorsport mechanics (karting chassis — since 2007)
+- **Deep karting industry access** — you work for Thiago Pereira (PCJ), who has 19 years in karting chassis (since 2007). You're embedded in the industry, at 80+ events/year, 22+ tracks. You know the people, the pain, the workflow.
 - **Builder** — you ship real software (hackFatura for PCJ: zero-cost field app, live in a single session)
 - **AI-native** — you run your own agent infrastructure, understand automation deeply
-- **100% OSS + sustainability values** — this is a brand differentiator, not a constraint
-- **Original music** — robot fantôme tracks infused into OUR content (unique sonic brand, no licensing costs, no one else sounds like you)
-- **Brand identity** — "robot fantôme" is memorable, clean editorial aesthetic, the mechanic-coder-musician story
+- **100% OSS + sustainability values** — brand differentiator, not a constraint
+- **Original music** — robot fantôme tracks in OUR content (unique sonic brand, zero licensing costs)
+- **Zero CAC at the track** — you're physically at 80+ karting events/year, surrounded by potential customers
 
 The play: **monetize the intersection**, not any single skill in isolation.
 
 ---
 
-## Revenue Acceleration Philosophy
-
-Speed to first dollar matters more than perfection. Every plan below has a **Quick Win** — something that can generate revenue in Week 1-2 with zero new infrastructure.
+## Revenue Philosophy
 
 Three rules:
 1. **Sell before you build.** Pre-sell, consult, audit — validate with money, not likes.
 2. **Charge on Day 1.** Free tiers come later. Early adopters pay because the alternative (paper, spreadsheets, doing nothing) costs them more in time.
-3. **Stack income sources.** No single stream needs to be huge. Five streams at $500 > one stream at $2,500 (more stable, more resilient).
+3. **Stack income sources.** Five streams at $500 > one stream at $2,500 (more stable, more resilient).
+
+**Time budget reality:** You're a traveling mechanic. Assume 10-15 productive hours/week for online work. Not 40. Not 25. Plan accordingly.
 
 ---
 
-## PLAN A: hackFatura → SaaS Product
+## THREE REVENUE STREAMS
 
-### Thesis
+### Priority Order (This Matters)
 
-hackFatura started as a client project for PCJ (Thiago's business). But the problem it solves — field invoicing, chassis tracking, event management for traveling mechanics — is **universal in motorsport.** Every other mechanic has the same problem. There is no good tool for this. They use paper.
+| Priority | Stream | Why First |
+|----------|--------|-----------|
+| **#1** | Consulting (Plan B) | Fastest to revenue, highest $/hour, builds case studies |
+| **#2** | hackFatura (Plan A) | Product already exists, customers are in your network |
+| **#3** | Content (Plan C) | Force multiplier but slowest to monetize — do NOT lead with this |
 
-The play: **turn the architecture into a SaaS product** that any mechanic can sign up for, under the Robot Fantôme brand. PCJ was the first customer. Everyone else pays.
+When time is scarce (travel weeks), work ONLY on #1 and #2. Content can pause. Revenue can't.
 
-### 🔥 Quick Win (Week 1-2): Sell Custom Builds
+---
 
-You don't need multi-tenancy to make money. **Sell custom-branded builds right now.**
+## PLAN A: hackFatura — From Client Project to Product
 
-- Take the hackFatura architecture (not PCJ's branding)
-- Build the client's version with THEIR branding, THEIR colors, THEIR business info
+### Phase 1 (Month 1-3): Custom Builds — Cash Now
+
+You don't need SaaS to make money. Sell what you already have.
+
+**The offer:**
+- Take the hackFatura architecture (NOT PCJ's branding)
+- Build the client's version with THEIR branding, colors, business info
 - Set up their Google Sheet + Apps Script
 - Deploy to their GitHub Pages
-- **Price: $300-500 per setup** (takes you 2-3 hours with Fantome helping)
-- Target: other karting mechanics you already know
-- **Credit line:** "Built by Robot Fantôme" in the footer
+- **Price: $500 per setup** (takes 2-3 hours with AI assistance)
+- **Credit line:** "Built by Robot Fantôme" in footer
 
-This is money in the door while you build the SaaS version. Every custom build is also a beta tester and a case study. And every one of them becomes a portfolio piece on robotfantome.com.
+**Target:** Karting mechanics you already know. You see them at the track. You don't need ads.
 
-### Target Market
+**Sales script:** "Hey [name], I built this invoicing app for trackside work — creates PDFs, tracks events, everything on your phone. Want me to set up one for your business? $500, I handle everything."
 
-- **Primary:** Traveling karting mechanics in North America (~200-500 active operators)
-- **Secondary:** Karting teams and shops that do trackside service (~1,000+)
-- **Tertiary:** Other motorsport field mechanics (sprint cars, dirt track, motocross pit crews)
-- **Long tail:** Any mobile/field service business (mobile welders, on-site repair, event-based trades)
+**Realistic target:** 1-2 builds per month = $500-1,000/mo
 
-### Revenue Model (SaaS — Month 3+)
+### Phase 2 (Month 4-6): SaaS — Only If Custom Builds Prove Demand
+
+**Decision trigger:** If you've sold 5+ custom builds AND 3+ people have asked "can I just sign up online?" — then build the SaaS version. Otherwise, keep selling custom builds.
+
+Do NOT start SaaS development before Month 4. Custom builds are the validation.
+
+**SaaS pricing (when ready):**
 
 | Tier | Price | Features |
 |------|-------|----------|
-| **Starter** | $9/mo | Single user, 100 invoices/mo, basic dashboard, "Powered by hackFatura" footer |
-| **Pro** | $29/mo | Multi-user (up to 5), unlimited invoices, custom branding, PDF export, full event dashboard |
-| **Team** | $59/mo | Unlimited users, multi-location, analytics, priority support, API access |
+| **Starter** | $19/mo | Single user, 100 invoices/mo, basic dashboard |
+| **Pro** | $39/mo | Multi-user (up to 5), unlimited invoices, custom branding, PDF export |
+| **Team** | $79/mo | Unlimited users, multi-location, analytics, API access |
 
-*Note: No free tier at launch. People who pay give better feedback than people who don't. Add a free tier later (Month 6+) once the product is proven and you want volume.*
+*Pricing raised from original plan. $9/mo is too cheap for a business tool that replaces paper invoicing. A mechanic who charges $150-350 per service can afford $19/mo.*
 
-### Why This Works
-
-- **You ARE the customer.** You know the pain better than any product manager ever will.
-- **Zero CAC potential.** You're AT the tracks 80+ events/year. Every mechanic you talk to is a potential user.
-- **Switching cost is high** once someone's invoices and customer data live in your system.
-- **Zero-cost stack** means you're profitable from customer #1.
-- **Custom builds generate cash flow** while SaaS catches up.
-
-### What Needs to Change (for SaaS)
-
-1. **Multi-tenancy** — each business gets their own workspace (PocketBase or Supabase for real DB — both free tier)
-2. **Auth** — Google OAuth (free, everyone has Google)
-3. **Onboarding flow** — sign up → name your business → set pricing → upload logo → go
-4. **Branding customization** — logo, colors, business info
-5. **Landing page** — `hackfatura.com` or `mech.robotfantome.com`
-6. **Payment** — Stripe (2.9% + 30¢, no monthly fee)
-
-### Revenue Projection
-
-| Month | Custom Builds | SaaS Users | MRR |
-|-------|--------------|------------|-----|
-| 1 | 1-2 ($300-1,000) | 0 | $300-1,000 (one-time) |
-| 2 | 2-3 ($600-1,500) | 0 | $600-1,500 (one-time) |
-| 3 | 1-2 | 5 (Starter/Pro) | $100-200 + builds |
-| 6 | on-demand | 15-25 | $300-600 |
-
-### Risks
-
-- Niche market = ceiling on growth (mitigated by expanding to other motorsports)
-- Google Sheets backend won't scale past ~50 concurrent users (migration planned)
-- Custom builds don't scale (transition to SaaS by Month 3)
-
----
-
-## PLAN B: AI Automation Consulting — Sell What You Know
-
-### Thesis
-
-You built an entire business app in one session using AI agents, zero-cost architecture, and open-source tools. Most small business owners can't do that. Most developers don't think about zero-cost stacks. You sit at the intersection of **"understands real business problems"** and **"can automate them with AI."**
-
-### 🔥 Quick Win (Week 1): AI Audits
-
-An AI Audit is the lowest-friction sale possible:
-- 30-minute call (Zoom/Google Meet — free)
-- You look at their business, identify 3-5 things to automate
-- Deliver a 1-page written report with recommendations and cost estimates
-- **Price: $150** (or $0 if they commit to a project within 30 days — "free audit" becomes lead gen)
-- **Time to deliver: 1 hour total** (30 min call + 30 min writing)
-
-You can do your first AI Audit **this week**. Anyone in your network running a small business qualifies.
+**SaaS tech decisions (make these in Month 3, not now):**
+- Auth: Google OAuth (free, everyone has Google)
+- DB: Supabase free tier (replaces Google Sheets)
+- Payments: Stripe
+- Hosting: GitHub Pages (frontend) + Supabase (backend)
+- Landing: robotfantome.com/hackfatura or mech.robotfantome.com
 
 ### Target Market
 
-- **Primary:** Small business owners (1-20 employees) drowning in manual processes
-- **Secondary:** Solopreneurs and freelancers who want to automate back office
-- **Tertiary:** Non-technical founders who need an MVP built fast and cheap
-- **Karting adjacent:** Karting shop owners, team managers, event organizers (you already know them)
+- **Primary:** Traveling karting mechanics in North America (~200-500 active)
+- **Secondary:** Karting teams and shops doing trackside service (~1,000+)
+- **Tertiary:** Other motorsport field mechanics (sprint cars, dirt track, motocross)
+- **Long tail:** Any mobile/field service business
 
-### Service Offerings
+### Revenue Projection
 
-| Service | Price | Deliverable | Time to Deliver |
-|---------|-------|-------------|-----------------|
-| **AI Audit** | $150 | 30-min call + written report | 1 hour |
-| **Workflow Build** | $500-2,000 | Custom automation (Sheets + Apps Script + integrations) | 1-3 days |
-| **Zero-Cost MVP** | $2,000-5,000 | Full app like hackFatura (frontend + backend + CI/CD) | 1-2 weeks |
-| **Monthly Retainer** | $500-1,000/mo | Ongoing maintenance, new automations, support | ~5-10 hrs/mo |
+| Month | Custom Builds | SaaS MRR | Total |
+|-------|--------------|----------|-------|
+| 1-3 | $500-1,000/mo | $0 | $500-1,000/mo |
+| 4 | $500 | $0-200 (beta) | $500-700 |
+| 5-6 | on-demand | $200-500 | $500-1,000/mo |
 
-### The Robot Fantôme Positioning
+### Risks & Mitigations
+
+| Risk | Mitigation |
+|------|------------|
+| Niche market ceiling | Expand to adjacent motorsports after proving karting |
+| Google Sheets won't scale | Migrate to Supabase only when you have 10+ users |
+| Custom builds don't scale | That's fine — they fund SaaS development |
+| No one wants to pay | If <3 builds sell in 3 months, pivot to consulting-only |
+
+---
+
+## PLAN B: AI Automation Consulting — The Cash Engine
+
+### Thesis
+
+You built an entire business app in one session using AI, zero-cost architecture, and open-source tools. Most small business owners can't do this. You sit at the intersection of "understands real business problems" and "can solve them with AI."
+
+### Service Ladder (Start at the Top)
+
+| Service | Price | Deliverable | Time | Priority |
+|---------|-------|-------------|------|----------|
+| **AI Audit** | $200 | 30-min call + written report with 3-5 automation recommendations | 1 hour | Do these FIRST |
+| **Workflow Build** | $750-2,500 | Custom automation (Sheets + Apps Script + integrations) | 1-3 days | When audits convert |
+| **Zero-Cost MVP** | $3,000-7,000 | Full app like hackFatura (frontend + backend + CI/CD) | 1-2 weeks | Premium offer |
+| **Monthly Retainer** | $750-1,500/mo | Ongoing maintenance, new automations, support (~5-10 hrs/mo) | Recurring | Push for these aggressively |
+
+*Prices raised from original plan. $150 for an audit attracts tire-kickers. $200 filters for serious buyers. $500-1,000 retainers are too low for ongoing AI automation support.*
+
+### Positioning
 
 **Anti-agency. Anti-bloat. Anti-vendor-lock-in.**
 
@@ -166,144 +175,109 @@ You can do your first AI Audit **this week**. Anyone in your network running a s
 - "I'm a mechanic who automates his own business. I'll do the same for yours."
 - "Open-source, zero-waste, zero-bullshit."
 
-All consulting work ships under the **Robot Fantôme** brand. Client deliverables use the CLIENT's brand — we're the builder behind the scenes. Our name shows up as a subtle credit + portfolio entry on robotfantome.com.
-
-This positioning attracts cost-conscious small business owners who are sick of paying $200/mo for tools they barely use. That's a massive market.
-
 ### Client Acquisition (Priority Order)
 
-1. **Warm network** — people you already know (karting community, local businesses, friends of friends)
-2. **LinkedIn** — "Building in public" content (Plan C drives this)
-3. **robotfantome.com/consulting** — portfolio + booking page
-4. **Upwork/Fiverr** (temporary) — take 2-3 gigs to build reviews, then graduate to direct clients
-5. **Referrals** — every happy client refers 1-2 more
+1. **Warm network first** — karting community, local businesses, friends of friends. You need 5 names this week.
+2. **LinkedIn** — "build in public" content drives inbound leads. But this is Month 2+, not Day 1.
+3. **robotfantome.com/consulting** — portfolio + booking page (Cal.com, open-source, free tier)
+4. **Referrals** — every happy client refers 1-2 more. Ask explicitly.
+5. **Upwork/Fiverr** — only if pipeline is dry in Month 2. Take 2-3 gigs for reviews, then leave.
+
+### Decision Triggers
+
+| Signal | Action |
+|--------|--------|
+| 3+ audits → 0 projects | Your pitch is wrong. Rework the audit → project conversion |
+| Demand > capacity | Raise prices 25%. Do NOT add hours. |
+| 2+ retainer clients by Month 3 | This is working. Double down on consulting, scale content to drive more leads |
+| 0 retainer clients by Month 4 | Re-evaluate service offering. Talk to past clients — why didn't they retain? |
 
 ### Revenue Projection
 
-| Month | AI Audits | Projects | Retainers | Revenue |
-|-------|-----------|----------|-----------|---------|
-| 1 | 2-3 | 0-1 | 0 | $300-950 |
-| 2 | 3-4 | 1-2 | 0 | $650-2,600 |
-| 3 | 3-4 | 1-2 | 1 | $1,150-3,600 |
-| 6 | 2-3 | 2-3 | 2-3 | $2,300-6,450 |
+| Month | Audits | Projects | Retainers | Total |
+|-------|--------|----------|-----------|-------|
+| 1 | 2-3 ($400-600) | 0-1 ($0-750) | 0 | $400-1,350 |
+| 2 | 2-3 | 1 ($750-2,500) | 0 | $950-3,100 |
+| 3 | 2-3 | 1-2 | 1 ($750-1,500) | $1,700-4,600 |
+| 4-6 | 1-2 | 1-2 | 2-3 | $2,500-6,500/mo |
 
-### Risks
+### Risks & Mitigations
 
-- Feast-or-famine income cycle (mitigated by retainers — push for these early)
-- Time conflict with mechanic work (mitigated by async delivery and AI-assisted builds)
-- Need to build reputation first (mitigated by warm network + LinkedIn content)
+| Risk | Mitigation |
+|------|------------|
+| Feast-or-famine income | Push for retainers early — recurring revenue is the goal |
+| Time conflict with mechanic work | Async delivery. Use AI to draft reports. Batch calls on non-travel days |
+| No reputation yet | Warm network first. Case studies from hackFatura. Build in public on LinkedIn |
 
 ---
 
-## PLAN C: Content + Education — Build in Public
+## PLAN C: Content + Education — The Force Multiplier
 
 ### Thesis
 
-Your story is genuinely interesting: a traveling karting mechanic who builds his own AI-powered business tools, runs his own agent infrastructure, and makes his own music. Content is the **force multiplier** for Plans A and B. But it also has its own revenue path.
+Your story is genuinely interesting. Content is the force multiplier for Plans A and B. But it is NOT the primary revenue driver in the first 3 months. Content builds the audience that eventually buys everything else.
 
-### 🔥 Quick Win (Week 2): Sell a Digital Product
+### Content Pillars (Pick 2, Not 4)
 
-You already have the knowledge. Package it immediately:
-
-**Product: "Zero-Cost Business App Blueprint"** — $19-29
-- A step-by-step guide: how to build a business app with $0/mo running costs
-- Includes: architecture template, Google Apps Script starter, GitHub Pages setup, jsPDF invoice template
-- Sell on Gumroad (free until you make money — they take 10%)
-- Write it in 2-3 hours. Sell it forever.
-
-This is money on autopilot while you sleep.
-
-### Content Pillars
+For the first 3 months, focus on ONLY these two:
 
 1. **"Zero-Cost Tech"** — How to build real business tools for $0/month
-   - hackFatura breakdowns, Google Apps Script tricks, GitHub Pages deployments
+   - hackFatura breakdowns, Google Apps Script tricks, GitHub Pages deploys
    - Target: indie hackers, bootstrappers, non-technical founders
 
-2. **"AI for Real Work"** — Practical AI automation (not hype)
-   - Agent workflows, prompt engineering for business, automation case studies
-   - Target: small business owners, solopreneurs, developers
-
-3. **"Mechanic Who Codes"** — The personal brand story
+2. **"Mechanic Who Codes"** — The personal brand story
    - Behind-the-scenes at karting events, building tools trackside, the traveling life
    - Target: general audience, karting community, maker culture
 
-4. **"OSS & Sustainability"** — Open-source everything, zero-waste tech
-   - Why free beats paid, reducing cloud waste, sustainability in tech
-   - Target: OSS community, sustainability-minded builders
+Add these in Month 4+ only if the first two are working:
+3. "AI for Real Work" — Practical AI automation case studies
+4. "OSS & Sustainability" — Open-source everything, zero-waste tech
 
-### 🎵 Music as a Content Weapon
+### Channel Strategy (Realistic for a Traveling Mechanic)
 
-robot fantôme music is infused into **everything**:
-- YouTube video intros/outros — unique sonic identity
-- Tutorial background music — your tracks, your brand
-- Podcast/content jingles — instant recognition
-- Product launch moments — drop a new track with a product launch
-- No licensing costs, no copyright strikes, 100% owned
+| Channel | Frequency | Priority | Notes |
+|---------|-----------|----------|-------|
+| **LinkedIn** | 2x/week | HIGH | Highest ROI for B2B consulting leads. Batch write on Sundays. |
+| **Newsletter** | 2x/month | MEDIUM | Owned audience. Buttondown (free, no self-hosting). |
+| **YouTube** | 2x/month | MEDIUM | Evergreen content. Record at track when possible. |
+| **GitHub** | Ongoing | LOW | Open-source tools as they come. Don't force it. |
+| **Twitter/X** | When natural | LOW | Repurpose LinkedIn posts. Don't create original content here. |
 
-This is a moat. No other tech content creator has their own punk rock soundtrack. It makes every piece of content feel different and memorable.
+*Cut from original plan: Daily Twitter, 3-4x/week LinkedIn, 1-2x/week YouTube, weekly newsletter. That's 15-20 pieces/week. Impossible for a solo traveling mechanic. This plan targets 5-6 pieces/week max.*
 
-### Channels (Priority Order)
+### Music Integration
 
-| Channel | Content Type | Frequency | Why |
-|---------|-------------|-----------|-----|
-| **LinkedIn** | Written posts, case studies | 3-4x/week | Highest ROI for B2B consulting leads |
-| **YouTube** | Tutorials, build sessions | 1-2x/week | Long-form discovery, evergreen SEO, music showcase |
-| **Newsletter** | Weekly digest + insights | 1x/week | Owned audience, direct relationship |
-| **GitHub** | Open-source tools, templates | Ongoing | Developer credibility |
-| **Twitter/X** | Short takes, threads | Daily | Discoverability, networking |
-| **Gumroad** | Digital products | Ongoing | Passive income |
+robot fantôme music goes into ALL video content:
+- YouTube intros/outros
+- Tutorial backgrounds
+- Course content (when it exists)
+- No licensing costs, 100% owned, unique sonic brand
 
-### Monetization Timeline
+**Music release schedule:**
+- Month 2: Get distributor renewed OR self-host on robotfantome.com/music
+- Month 5-6: New single release timed with a product launch (course or SaaS)
 
-| When | What | Revenue |
-|------|------|---------|
-| Week 2 | "Zero-Cost Business App Blueprint" on Gumroad | $19-29/sale |
-| Month 2 | Consulting leads from LinkedIn content | $500-1,500/mo (attributed) |
-| Month 3 | hackFatura landing page + signup from content | $100-300/mo |
-| Month 4 | Template pack: "5 Google Apps Script Business Templates" ($39) | Passive |
-| Month 5 | Course pre-sale: "Build Your Business Tools with AI" ($99-149) | $1,000-3,000 (launch) |
-| Month 6 | Newsletter sponsorships (750+ subscribers) | $200-400/issue |
+### Digital Products (Start Simple)
+
+| When | Product | Price | Effort |
+|------|---------|-------|--------|
+| Month 1 | "Zero-Cost Business App Blueprint" on Gumroad | $29 | 3-4 hours to create |
+| Month 3 | "Google Apps Script Business Templates" (5-pack) | $39 | 4-5 hours |
+| Month 5-6 | Course: "Build Your Business Tools with AI" | $99-149 | Only if 500+ newsletter subs |
+
+**Decision trigger for course:** Do NOT build a course until you have 500+ newsletter subscribers. Courses without an audience don't sell. If you don't hit 500 subs by Month 5, skip the course and keep selling consulting.
 
 ### Revenue Projection
 
 | Month | Digital Products | Course | Sponsorships | Total |
 |-------|-----------------|--------|-------------|-------|
-| 1 | $50-150 | $0 | $0 | $50-150 |
-| 2 | $100-300 | $0 | $0 | $100-300 |
-| 3 | $150-400 | $0 | $0 | $150-400 |
-| 6 | $300-600 | $1,000-3,000 (launch) | $200-400 | $1,500-4,000 |
-
-### Risks
-
-- Content takes time to compound (3-6 months before real traction)
-- Consistency is hard while traveling for mechanic work
-- Video production requires equipment and editing time (mitigated by AI tools + phone recording + your own music)
+| 1-2 | $50-200 | $0 | $0 | $50-200 |
+| 3-4 | $100-400 | $0 | $0 | $100-400 |
+| 5-6 | $200-500 | $0-3,000 (if audience exists) | $0-200 | $200-3,700 |
 
 ---
 
-## THE STACK: How They Reinforce Each Other
-
-```
-Month 1 (NOW):
-├── [PLAN B] First AI Audits → immediate cash
-├── [PLAN A] hackFatura custom builds → cash + case studies
-├── [PLAN C] First LinkedIn posts + Gumroad product → leads + passive income
-└── [MUSIC] Record intro/outro clips for future content
-
-Month 2-3:
-├── [PLAN B] Projects + first retainer → stable recurring
-├── [PLAN A] Multi-tenant SaaS launch → MRR begins
-├── [PLAN C] YouTube launches with original music → audience grows
-└── Content → drives consulting leads AND SaaS signups
-
-Month 4-6:
-├── All three streams generating revenue
-├── Content flywheel spinning (leads → clients → case studies → content)
-├── Course launch amplifies everything
-└── Target: $2,500-5,000/mo combined
-```
-
-### The Flywheel
+## THE FLYWHEEL: How Everything Connects
 
 ```
      Content + Music (Plan C)
@@ -318,42 +292,72 @@ Month 4-6:
        More Content → repeat
 ```
 
+### Time Allocation by Phase
+
+**Months 1-2 (Revenue Sprint):**
+- 50% Consulting (audits, projects, outreach)
+- 30% hackFatura (custom builds, backend fixes)
+- 20% Content (LinkedIn, Gumroad product)
+
+**Months 3-4 (System Building):**
+- 40% Consulting (retainers, projects)
+- 30% hackFatura (SaaS decision + possible build)
+- 30% Content (YouTube, newsletter growth)
+
+**Months 5-6 (Scaling):**
+- 35% Consulting (retainers on autopilot)
+- 35% hackFatura (SaaS growth or custom builds)
+- 30% Content (course if audience exists, otherwise double down on what works)
+
 ### The Brand Umbrella: robotfantome.com
 
-| Page | Purpose |
-|------|---------|
-| `/` | Who you are, what you do (portfolio + story) |
-| `/consulting` | AI automation services, booking, packages |
-| `/hackfatura` | SaaS product (or redirect to mech.robotfantome.com) |
-| `/blog` | Content hub (repurposed from LinkedIn/YouTube) |
-| `/newsletter` | Signup + archive |
-| `/shop` | Digital products (or redirect to Gumroad) |
-| `/music` | robot fantôme — the band, the sound, the vibe |
+| Page | Purpose | When to Build |
+|------|---------|---------------|
+| `/` | Who you are, what you do | Month 1 (Week 3) |
+| `/consulting` | AI automation services + booking link | Month 1 (Week 3) |
+| `/hackfatura` | Product page or redirect to subdomain | Month 2 |
+| `/blog` | Content hub (repurposed from LinkedIn) | Month 3 |
+| `/music` | Embed tracks, streaming links | Month 2-3 |
+| `/newsletter` | Signup + archive | Month 2 |
+
+**Stack decision:** Astro on GitHub Pages. Free, fast, supports MDX for blog. Decide now, build Week 3.
 
 ---
 
-## Total Revenue Projection (Hybrid, 6 Months)
+## Total Revenue Projection (Realistic)
 
 | Source | Month 1 | Month 3 | Month 6 |
 |--------|---------|---------|---------|
-| hackFatura (builds + SaaS) | $300-1,000 | $400-1,200 | $300-600 MRR |
-| Consulting | $300-950 | $1,150-3,600 | $2,300-6,450 |
-| Digital Products + Content | $50-150 | $150-400 | $1,500-4,000 |
-| **Monthly Total** | **$650-2,100** | **$1,700-5,200** | **$4,100-11,050** |
+| hackFatura (builds) | $500 | $500-1,000 | $500-1,000 |
+| hackFatura (SaaS) | $0 | $0 | $200-500 MRR |
+| Consulting | $400-1,350 | $1,700-4,600 | $2,500-6,500 |
+| Content/Products | $50-200 | $100-400 | $200-3,700 |
+| **Monthly Total** | **$950-2,050** | **$2,300-6,000** | **$3,400-11,700** |
 
-**6-month cumulative (conservative): $12,000-25,000**
+**6-month cumulative (conservative): ~$14,000**
+**6-month cumulative (realistic mid): ~$22,000**
+**6-month cumulative (optimistic): ~$35,000**
+
+### Monthly Income Milestones
+
+| Milestone | Target | What It Means |
+|-----------|--------|---------------|
+| First $1,000/mo online | Month 1-2 | Proof of concept. Keep going. |
+| First $2,500/mo online | Month 3-4 | This is a real business. Start reducing mechanic hours if possible. |
+| First $5,000/mo online | Month 5-6 | Mechanic work becomes optional. Begin transition planning. |
 
 ---
 
 ## Core Principles (Non-Negotiable)
 
 - **$0 infrastructure** until revenue justifies spend
-- **Open-source first** — always. Use it, contribute to it, build on it.
-- **Sustainability** — zero-waste stack, minimal cloud footprint, no unnecessary services
+- **Open-source first** — always
+- **Sustainability** — zero-waste stack, minimal cloud footprint
 - **Build in public** — transparency is the brand
 - **Original music everywhere** — robot fantôme is the soundtrack
-- **Mechanic work stays** until online revenue replaces it (no burning bridges)
-- **Charge early, charge often** — validate with money, not likes
+- **Mechanic work stays** until online revenue replaces it
+- **Charge early, charge often** — validate with money
+- **10-15 hours/week** — plan for reality, not fantasy
 
 ---
 
@@ -365,11 +369,25 @@ When evaluating any opportunity, ask:
 2. Does it feed the flywheel? (content → credibility → clients → case studies → content)
 3. Can it run at $0/mo until proven?
 4. Does it align with OSS + sustainability values?
-5. Can it be built with AI assistance in hours, not weeks?
+5. Can it be done in 10-15 hours/week alongside mechanic work?
 6. Can robot fantôme music enhance it?
 
-If yes to 4+, do it. If no to #4, hard pass.
+If yes to 4+, do it. If no to #4 (values), hard pass.
 
 ---
 
-*This strategy is alive. Review monthly. Update as reality hits.*
+## Monthly Review Checklist
+
+On the first Sunday of each month:
+
+- [ ] Actual revenue vs projections — adjust targets
+- [ ] Which stream generated the most $/hour? — allocate more time there
+- [ ] Decision triggers hit? — execute the corresponding action
+- [ ] What content performed best? — make more of that
+- [ ] Client feedback collected? — improve offers
+- [ ] Update STRATEGY.md + TIMELINE.md with real numbers
+- [ ] Update memory files with lessons learned
+
+---
+
+*This strategy is alive. Review monthly. Kill what doesn't work. Double down on what does.*
