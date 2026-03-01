@@ -2,30 +2,30 @@
 
 ## The Rule
 
-> **Our work** (Absolutely Plausible / robotfantome.com) → AP cyberpunk palette
+> **Our work** (Absolutely Plausible / robotfantome.com) → Robot Fantôme clean editorial palette
 > **Client work** → client's own palette
 > Check this page before building any UI.
 
 ---
 
-## Absolutely Plausible — Cyberpunk Futuristic
+## Robot Fantôme — Clean Editorial
 
-Dark, electric, neon. This is our default aesthetic for everything built under our own umbrella.
+White space-forward, content-driven, editorial. The art and music provide the color. The frame stays neutral.
 
-| Role | Hex | Preview |
-|------|-----|---------|
-| Background | `#0d0d0d` | Near-black |
-| Primary | `#00ff9f` | Electric green / cyber mint |
-| Accent | `#ff003c` | Hot red / glitch |
-| Secondary | `#7b2fff` | Neon purple |
-| Surface | `#111827` | Dark surface |
-| Border | `#1f2937` | Subtle separator |
-| Text | `#e0e0e0` | Off-white |
-| Muted | `#6b7280` | Dimmed |
+| Role | Hex | Usage |
+|------|-----|-------|
+| Background | `#FFFFFF` | Primary background |
+| Off-White | `#F5F5F5` | Subtle section backgrounds |
+| Black | `#000000` | Primary text, headings |
+| Dark Gray | `#333333` | Secondary text, body copy |
+| Mid Gray | `#888888` | Captions, metadata, subtle UI |
+| Light Gray | `#E2E2E2` | Borders, dividers, cards |
 
-**Typography:** Monospace or geometric sans-serif. JetBrains Mono preferred. Sharp, techy. No soft rounded fonts.
+**Typography:** Serif headings (Playfair Display or Libre Baskerville), clean sans body (Inter or DM Sans), JetBrains Mono for code.
 
-**Keywords:** Ghost in the machine, electromagnetic, shape-shifting, open-source, revolutionary.
+**Keywords:** Ghost in the machine, open-source, community, art magazine, zine, manifesto.
+
+**Voice:** Community-first, punk ethos, DIY, anti-corporate, build your own tools, "absolutely plausible."
 
 ---
 
@@ -33,19 +33,17 @@ Dark, electric, neon. This is our default aesthetic for everything built under o
 
 Industrial, mechanical. Bold, grounded. Used in **hackFatura**.
 
-| Role | Hex | Preview |
-|------|-----|---------|
-| Background | `#1a1a1a` | Graphite dark |
-| Primary | `#cc0000` | PCJ red |
-| Surface | `#2a2a2a` | Graphite mid |
-| Border | `#3a3a3a` | Graphite light |
-| Text | `#f0f0f0` | Near-white |
-| Muted | `#9ca3af` | Dimmed |
+| Role | Hex |
+|------|-----|
+| Background | `#0A0A0F` |
+| Primary Red | `#E74C3C` / `#C0392B` |
+| Graphite Surface | `#333333` |
+| Text | `#F0F0F0` |
 
-**Typography:** Bold, clean, industrial. Sturdy sans-serif.
+**Typography:** Orbitron (display), Share Tech Mono (body). Cyberpunk, dark theme, scanlines.
 
-!!! note "Pending"
-    Confirm exact hex values with Thiago / PCJ branding materials. Update this section when confirmed.
+!!! warning "Color Rule"
+    All work for PCJ must use the PCJ palette — never the Robot Fantôme editorial palette.
 
 ---
 
@@ -60,11 +58,11 @@ Copy this template and fill it in before building any client UI:
 **Project:** [Project name and what it does]
 **Relationship:** Built by Absolutely Plausible for [client]
 
-| Role | Hex | Preview |
-|------|-----|---------|
-| Background | `` | |
-| Primary | `` | |
-| Text | `` | |
+| Role | Hex |
+|------|-----|
+| Background | `` |
+| Primary | `` |
+| Text | `` |
 
 **Typography:** [describe]
 ```

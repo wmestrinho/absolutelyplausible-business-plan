@@ -1,5 +1,5 @@
 site_name: Absolutely Plausible — Business Plan
-site_description: Living business plan, brand identity, and project roadmap for Absolutely Plausible / robotfantome.com
+site_description: Living business plan, brand identity, and project roadmap for Robot Fantôme / Absolutely Plausible
 site_author: Luiz Wagner Mestrinho
 site_url: https://wmestrinho.github.io/absolutelyplausible-business-plan/
 
@@ -33,10 +33,11 @@ nav:
   - Home: index.md
   - Identity: identity.md
   - Brand: brand.md
+  - Strategy: strategy.md
+  - Timeline: timeline.md
   - Projects:
     - Overview: projects/index.md
     - hackFatura (PCJ): projects/hackfatura.md
-    - Karting MVP: projects/karting-mvp.md
     - Roadmap & Checklist: projects/roadmap.md
   - Clients:
     - PCJ / Parazinho Chassis Jig: clients/pcj.md
