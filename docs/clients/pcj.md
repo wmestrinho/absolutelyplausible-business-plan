@@ -21,7 +21,7 @@
 
 ## Brand
 
-PCJ uses an industrial, mechanical palette. See [Brand Guidelines](../brand.md#client-pcj--parazinho-chassis-jig) for hex values.
+PCJ uses an industrial, mechanical palette. See [Brand Guidelines](../brand.md#pcj) for hex values.
 
 !!! warning "Color Rule"
     All work for PCJ must use the PCJ palette — never the Robot Fantôme editorial palette.
