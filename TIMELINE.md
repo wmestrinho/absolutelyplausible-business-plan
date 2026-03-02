@@ -301,7 +301,7 @@ These are the critical decision points. Don't guess — let the data decide.
 | Day | Focus | Notes |
 |-----|-------|-------|
 | **Sunday** | Plan + review | Weekly review, write LinkedIn posts for the week, update files |
-| **Monday** | Consulting | Audits, project delivery, client calls |
+| **Monday** | Consulting (morning) + Choir (evening) | Audits, project delivery, client calls in the AM. **Choir rehearsal evenings Aug-May — hard block.** |
 | **Tuesday** | hackFatura | Development, custom builds, support |
 | **Wednesday** | Outreach | Follow up leads, DM potential clients, networking |
 | **Thursday** | Content | YouTube recording, newsletter writing, Gumroad products |
@@ -309,6 +309,7 @@ These are the critical decision points. Don't guess — let the data decide.
 | **Saturday** | Karting | USE hackFatura at the track. NETWORK. SELL. |
 
 **On travel weeks:** Only do outreach (Wednesday tasks) + follow-ups. Don't try to build or create content on the road.
+**Concert weeks:** Choir has extra rehearsals. Plan for reduced online work those weeks.
 
 ---
 

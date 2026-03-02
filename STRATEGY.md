@@ -49,10 +49,13 @@ Most founders have one skill. You have a rare stack:
 - **Builder** — you ship real software (hackFatura for PCJ: zero-cost field app, live in a single session)
 - **AI-native** — you run your own agent infrastructure, understand automation deeply
 - **100% OSS + sustainability values** — brand differentiator, not a constraint
-- **Original music** — robot fantôme tracks in OUR content (unique sonic brand, zero licensing costs)
-- **Zero CAC at the track** — you're physically at 80+ karting events/year, surrounded by potential customers
+- **Original music (two tracks)** — robot fantôme punk/rock tracks in OUR content (zero licensing costs, unique sonic brand). AND ~10 years in the Bach Festival Choir of Winter Park — one of the finest choral organizations in America. Two completely different musical identities, both genuine.
+- **Zero CAC at the track** — physically at 80+ karting events/year surrounded by potential customers
+- **Bach Festival Choir network** — ~150 musicians, music educators, soloists, and community leaders in Central Florida. Audition-only ensemble (WSJ: "one of the finest of its kind in America"). This is a warm, trust-based professional network with zero overlap with the typical tech founder audience. PBS appearances, European tours (London Symphony Orchestra, Italian tour 2025). 10 years of membership = deep credibility and trust.
 
 The play: **monetize the intersection**, not any single skill in isolation.
+
+The story that no one else has: *classical choir singer + punk musician + karting mechanic + AI builder*. Each one alone is interesting. All four together is unforgettable.
 
 ---
 
@@ -225,9 +228,11 @@ For the first 3 months, focus on ONLY these two:
    - hackFatura breakdowns, Google Apps Script tricks, GitHub Pages deploys
    - Target: indie hackers, bootstrappers, non-technical founders
 
-2. **"Mechanic Who Codes"** — The personal brand story
-   - Behind-the-scenes at karting events, building tools trackside, the traveling life
-   - Target: general audience, karting community, maker culture
+2. **"The Whole Life"** — The personal brand story that no one else has
+   - Classical choir singer on Monday. Punk rock on the weekend. Karting mechanic on the road. AI builder at night.
+   - Behind-the-scenes at karting events, choir rehearsal life, building tools trackside
+   - Target: general audience, maker culture, musicians, karting community
+   - This IS the moat. No one else has this combination. Lean into all of it.
 
 Add these in Month 4+ only if the first two are working:
 3. "AI for Real Work" — Practical AI automation case studies
@@ -247,15 +252,22 @@ Add these in Month 4+ only if the first two are working:
 
 ### Music Integration
 
-robot fantôme music goes into ALL video content:
-- YouTube intros/outros
-- Tutorial backgrounds
-- Course content (when it exists)
-- No licensing costs, 100% owned, unique sonic brand
+**Two music identities, both real, both valuable:**
 
-**Music release schedule:**
-- Month 2: Get distributor renewed OR self-host on robotfantome.com/music
-- Month 5-6: New single release timed with a product launch (course or SaaS)
+**robot fantôme (punk/indie/rock):**
+- Tracks go into ALL video content — YouTube intros/outros, tutorial backgrounds, course content
+- No licensing costs, 100% owned, unique sonic brand
+- Month 2: Renew distributor OR self-host at robotfantome.com/music
+- Month 5-6: New single release timed with product/SaaS launch
+
+**Bach Festival Choir (classical, world-class):**
+- ~10 years in the [Bach Festival Society of Winter Park](https://www.bachfestivalflorida.org) — audition-only, 150 voices, PBS, European tours
+- Monday evening rehearsals (mid-August through May) — hard schedule constraint
+- Network of ~150 musicians = warm consulting leads, referral source, community
+- Content angle: the contrast between choir and punk is the story. Use it.
+- Choir concerts and behind-the-scenes = authentic content that no tech creator has
+
+**The combined story:** Bach on Monday. Punk on the weekend. AI on Sunday. Karting everywhere in between. This is not a persona — it's your actual life. Own it fully.
 
 ### Digital Products (Start Simple)
 
