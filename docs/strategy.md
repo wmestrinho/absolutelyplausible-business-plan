@@ -8,7 +8,7 @@
 
 ## Business Structure
 
-**Robot Fantôme** (Absolutely Plausible) is OUR business — the umbrella brand for everything we build, sell, and create.
+**Robot Fantôme** (Absolutely Plausible) is OUR business — the umbrella brand for everything we build, sell, and create. **Founded July 2014. 11+ years running.**
 
 **hackFatura** is a CLIENT PROJECT — built for **Parazinho Chassis Jig (PCJ)**, owned by **Thiago Pereira**. It uses PCJ's brand (black/red/graphite cyberpunk). It is NOT our brand.
 
@@ -53,7 +53,7 @@ Most founders have one skill. This is a rare stack:
 
 The play: **monetize the intersection**, not any single skill in isolation.
 
-The story that no one else has: *classical choir singer + punk musician + karting mechanic + AI builder*. Each one alone is interesting. All four together is unforgettable.
+The story that no one else has: *classical choir singer + punk musician + karting mechanic + AI builder + trilingual hospitality veteran*. Each one alone is interesting. All together it's unforgettable — and completely unreplicable.
 
 ---
 

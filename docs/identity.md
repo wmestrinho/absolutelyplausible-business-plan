@@ -2,44 +2,36 @@
 
 ## Luiz Wagner Mestrinho
 
-Traveling mechanic. Freelance developer. AI builder. Punk musician. Classical choral singer. Trilingual.
+Founder. Traveling mechanic. Developer. AI builder. Punk musician. Classical choral singer. Trilingual.
 
 - **Location:** Central Florida (Winter Park / Orlando area)
 - **Timezone:** America/New_York (EST)
 - **Contact:** (407) 485-1769 · wmestrinho@live.com · [linkedin.com/in/mestrinho](https://linkedin.com/in/mestrinho)
 - **Values:** 100% open-source, zero-waste/zero-pollution, privacy-first
 - **Working style:** Direct, lean, bias toward action
-- **Languages:** English (fluent), Portuguese (native), Spanish (fluent)
+- **Languages:** English (fluent) · Portuguese / Brazilian Portuguese (native) · Spanish (fluent)
 
-### The Unfair Stack
+---
+
+## The Unfair Stack
 
 No one else has this combination:
 
 - **Karting mechanic embedded in the industry** — works for PCJ (Thiago Pereira, 19 years in the sport), 80+ events/year, 22+ tracks coast-to-coast
 - **Ships real software** — built hackFatura (zero-cost field app) in a single session with AI
 - **AI-native** — runs own agent infrastructure, understands automation at a systems level
-- **Trilingual** — English, Portuguese, Spanish. Direct access to the Brazilian karting community (the dominant force in US karting) in their native language. No translator needed.
+- **Trilingual: English · Portuguese · Spanish** — the Brazilian karting community is the dominant force in US karting. Pitches, sells, supports, and builds relationships in Portuguese natively. No competitor has this access without a translator.
+- **20 years of customer-facing roles** — hospitality management, multilingual concierge, healthcare marketing, legal IT. Knows how real businesses work before they have tech.
 - **Two music careers** — robot fantôme (punk/indie/rock) AND Bach Festival Choir (classical, world-class). Both real. Both 10+ years.
 - **Open-source and sustainability** — brand differentiator, not a constraint
 - **Zero CAC at the track** — surrounded by potential customers every weekend
-
-### Background
-
-| Period | Role | Notes |
-|--------|------|-------|
-| 2022–present | Traveling Mechanic / Dev | PCJ / Parazinho Chassis Jig — karting, coast-to-coast |
-| 2020–2022 | Technology / Legal Assistant | Law Office of John Jordan, Orlando — court appearances, e-filing, client management |
-| 2017–2020 | Entrepreneur / Self-Employed | Absolutely Plausible LLC — residential construction contracting |
-| 2017 | Back-End Engineering Certification | The Iron Yard, Orlando (3-month bootcamp) |
-| 2014–2016 | Customer Service | Señor Frog's at International, Orlando |
-| 2011–2014 | Front Desk / Housekeeping Manager | Days Inn at Universal + Quality Inn & Suites, Orlando (managed 20-person team) |
-| 2006 | HS Diploma | Dr. Phillips High School, Orlando |
 
 ---
 
 ## Absolutely Plausible
 
 The business entity. The umbrella. Everything we build that isn't someone else's brand lives here.
+**Founded: July 2014 — 11+ years running.**
 
 - **Domain:** [robotfantome.com](https://robotfantome.com), robotfantome.crypto
 - **Focus:** Web development, AI tooling, freelance consulting, digital products
@@ -69,6 +61,37 @@ The punk music project. Indie/Punk/Rock. EP with 5 songs released and live.
 - ~150 musicians in Central Florida = warm professional network
 
 The contrast between choir and punk is not a contradiction — it's the most honest version of who Luiz is. Bach on Monday, punk on Saturday.
+
+---
+
+## Career Background
+
+| Period | Role | Organization | Type |
+|--------|------|--------------|------|
+| 2014–present | **Founder** | Absolutely Plausible | Self-employed |
+| 2023 (Mar–Oct) | Marketing Consumer Experience Specialist | AdventHealth | Full-time |
+| 2022–present | Traveling Mechanic / Dev | PCJ / Parazinho Chassis Jig | Contract |
+| 2021–present | Developer Advocate | City Catt | Internship · Remote |
+| 2021–present | Bartender | Premier Events | Seasonal |
+| 2020–2022 | IT Support Specialist | Law Office of John Jordan | Full-time · Hybrid |
+| 2017 | **Back-End Engineering Certification** | The Iron Yard, Orlando | 3-month bootcamp |
+| 2010–2013 | Front Desk Manager | Clarion Hotel Universal | Full-time |
+| 2007–2008 | Valet | Best Western Lake Buena Vista (Disney Springs) | Part-time |
+| 2006–2007 | Front Desk Receptionist | Baymont Inn And Suites Orlando | Part-time |
+| 2006 | Concierge | Wyndham Orlando Resort International Drive | Part-time |
+| 2006 | **HS Diploma** | Dr. Phillips High School, Orlando | — |
+| 2005 | Bellperson | Orlando Marriott | Seasonal |
+
+### Key Skills Across Career
+
+| Domain | Skills |
+|--------|--------|
+| **Development** | JavaScript · AngularJS · Back-End Engineering · Google Apps Script · AI/Agent infrastructure |
+| **IT** | IT Service Management · Hardware Troubleshooting · Technical Support · Computer Literacy |
+| **Business** | Enterprise Software · Case Management · Family Law context · Healthcare marketing |
+| **Hospitality** | Hotel Management · Front Desk · Concierge · Bartending · Multilingual guest services |
+| **Communication** | Public Speaking · Trilingual (EN/PT/ES) · Brazilian Portuguese translation · Customer Service |
+| **Leadership** | Team Leadership · Housekeeping department management (20 staff) · Problem Solving |
 
 ---
 
