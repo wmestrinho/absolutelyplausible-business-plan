@@ -20,8 +20,8 @@
 - [x] GitHub Actions CI/CD — auto-deploys on push
 - [x] Google Apps Script backend rewritten (GET-based, CORS-safe)
 - [ ] Redeploy Apps Script → confirm Sheets backend works end-to-end
-- [ ] DNS: CNAME `mech → wmestrinho.github.io` at robotfantome.com
-- [ ] GitHub Pages custom domain → `mech.robotfantome.com`
+- [x] DNS: CNAME `mech → wmestrinho.github.io` set at robotfantome.com *(propagating)*
+- [x] GitHub Pages custom domain → `mech.robotfantome.com` configured *(waiting on DNS)*
 - [ ] Test full workflow: create event → log work → generate invoice → verify in Sheets
 
 ### Content
@@ -54,7 +54,7 @@
   - Hero (mechanic + coder + musician)
   - `/consulting` with packages + Cal.com booking link
   - `/hackfatura` teaser
-- [ ] Set up DNS for mech.robotfantome.com
+- [ ] Verify `mech.robotfantome.com` fully resolves after DNS propagation
 
 ### Revenue
 
@@ -84,7 +84,7 @@
 - [ ] Monthly retrospective: actual revenue vs target ($950-2,050)
 - [ ] Hours spent per stream
 - [ ] What worked? What didn't? Adjust.
-- [ ] Update STRATEGY.md + TIMELINE.md with real numbers
+- [ ] Update strategy + timeline with real numbers
 
 ---
 
@@ -126,6 +126,22 @@
 
 ## Completed (Archive)
 
+### 2026-03-03 — Identity & Documentation Overhaul
+
+- [x] CLAUDE.md created — guidance for Claude Code in this repo
+- [x] Docs structure consolidated — root STRATEGY/TIMELINE/BRAND.md deleted, docs/ is single source of truth
+- [x] Vestigial jekyll-gh-pages.yml workflow deleted — MkDocs only
+- [x] docs/strategy.md promoted to full version — all missing sections added (Unfair Advantage, Two music identities, Revenue Philosophy, Decision Gates, Monthly Review Checklist, Brand Umbrella plan, Time Allocation by Phase)
+- [x] docs/timeline.md promoted to full version — Planning Principles, per-stream weekly breakdowns, Decision Gates summary, What to Track Weekly, concert week note
+- [x] docs/brand.md promoted to full version — typography, design principles, brand voice, logo/wordmark
+- [x] docs/identity.md — complete profile built from LinkedIn + resume + education + certifications + volunteering:
+  - Full career background table (2005–present)
+  - Education section (Fatec Sebrae Brazil 2002 → Purdue Global AS IT 2025)
+  - Certifications (freeCodeCamp Front End + Responsive Web Design, Jan 2023)
+  - Volunteering section (Bach Festival Musician + Usher, Wildlife Refuge, Pathlight HOME, Vipassana Center)
+  - Trilingual: English · Portuguese · Spanish documented as strategic advantage
+  - Absolutely Plausible founding date corrected to July 2014
+
 ### 2026-02-24 — First Contact
 
 - [x] Fantome agent infrastructure set up
@@ -148,22 +164,13 @@
 - [x] Repo live: github.com/wmestrinho/hackFatura
 - [x] Pages live: wmestrinho.github.io/hackFatura (HTTP 200 confirmed)
 
-### 2026-03-01 — Business Plan + Cleanup
+### 2026-03-01 — Business Plan + Strategy v2
 
-- [x] Business strategy written: 3-plan flywheel (hackFatura SaaS + AI Consulting + Content)
+- [x] Business strategy written: 3-plan flywheel (hackFatura + AI Consulting + Content)
 - [x] 6-month timeline with weekly tasks written
 - [x] Brand guide updated: Robot Fantôme editorial vs PCJ cyberpunk
-- [x] karting-mvp folder deleted (superseded by hackFatura)
-- [x] Apps Script rewritten for GET-based CORS-safe operation
-- [x] business-plan repo synced with absolutelyplausible-business-plan on GitHub
-
-### 2026-03-01 — Strategy v2 Improvements
-
 - [x] Financial reality check added ($1,750/mo survival, $750/mo PCJ, $1,500/mo online target)
-- [x] Fixed experience attribution (19 years is Thiago/PCJ, not Luiz)
 - [x] Raised prices: AI Audit $200, retainers $750-1,500, SaaS $19/$39/$79
 - [x] Added decision gates (if/then triggers for SaaS, course, price raises)
-- [x] Reduced content volume to realistic 10-15 hrs/week capacity
-- [x] Delayed SaaS to Month 4+ (custom builds validate first)
 - [x] Priority ranking: Consulting #1, hackFatura #2, Content #3
-- [x] Added travel week protocol: outreach + follow-ups only
+- [x] Travel week protocol added
