@@ -33,7 +33,7 @@ No one else has this combination:
 The business entity. The umbrella. Everything we build that isn't someone else's brand lives here.
 **Founded: July 2014 — 11+ years running.**
 
-- **Domain:** [robotfantome.com](https://robotfantome.com), robotfantome.crypto
+- **Domains:** [robotfantome.com](https://robotfantome.com) · [plan.robotfantome.com](https://plan.robotfantome.com) · `robotfantome.crypto` (Unstoppable Domains — Web3)
 - **Focus:** Web development, AI tooling, freelance consulting, digital products
 - **Aesthetic:** Clean, minimal, editorial. White space is a feature. See [Brand](brand.md).
 

@@ -105,6 +105,11 @@
 - [ ] Course: "Build Your Business Tools with AI" — ONLY if 500+ newsletter subs
 - [ ] YouTube channel setup — Month 2
 
+### Infrastructure & Domains
+
+- [ ] DNS migration: Dreamhost → Namecheap (registrar) + Cloudflare (DNS) — when ready
+- [ ] robotfantome.crypto: IPFS full deploy via Fleek + GitHub Action auto-update — after robotfantome.com v1 is live. See [Domain Strategy](../brand.md#domain-strategy) for full plan.
+
 ### Music
 
 - [ ] Renew distributor subscription to keep EP online

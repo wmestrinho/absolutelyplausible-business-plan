@@ -79,6 +79,55 @@ Industrial, mechanical. Bold, grounded. Used in **hackFatura**.
 
 ---
 
+## Domain Strategy
+
+### Current Setup
+
+| Domain | Purpose | Status |
+|--------|---------|--------|
+| `robotfantome.com` | Main brand site (robotfantome.com v1 — to be built) | DNS at Dreamhost → moving to Namecheap + Cloudflare |
+| `plan.robotfantome.com` | This business plan site (MkDocs on GitHub Pages) | Live |
+| `mech.robotfantome.com` | hackFatura (PCJ field management app) | DNS propagating |
+| `robotfantome.crypto` | Web3 / blockchain domain (Unstoppable Domains, Polygon) | Redirect → plan.robotfantome.com |
+
+### DNS Migration Plan
+
+Current DNS provider: **Dreamhost**
+Target: **Namecheap** (registrar) + **Cloudflare** (DNS + CDN)
+
+When migrating, all subdomain CNAME records are identical — just re-enter them at Cloudflare:
+
+| Subdomain | Type | Value | Cloudflare proxy |
+|-----------|------|-------|-----------------|
+| `plan` | CNAME | `wmestrinho.github.io` | **DNS only** (grey cloud) |
+| `mech` | CNAME | `wmestrinho.github.io` | **DNS only** (grey cloud) |
+
+!!! warning "Cloudflare + GitHub Pages"
+    Always set GitHub Pages subdomains to **DNS only** (grey cloud) in Cloudflare. If proxied (orange cloud), GitHub Pages cannot provision the Let's Encrypt HTTPS certificate and the site will break.
+
+### robotfantome.crypto — Web3 Domain
+
+`robotfantome.crypto` is a blockchain domain registered with [Unstoppable Domains](https://unstoppabledomains.com) on the Polygon network.
+
+**Current:** Redirect to `https://plan.robotfantome.com` (set in Unstoppable Domains dashboard).
+
+**Future — Full IPFS Deploy (planned):**
+
+The goal is to serve the site from IPFS so `robotfantome.crypto` resolves to a truly decentralized, censorship-resistant version. This fits the OSS + zero-waste + cyberpunk ethos of the brand — no servers, no hosting fees, no single point of failure.
+
+**Planned implementation:**
+
+1. **Fleek** (fleek.co) — GitHub integration that auto-deploys `site/` to IPFS on every push to `main`
+2. **GitHub Action** — after MkDocs build, pin `site/` to IPFS via Pinata or Fleek API, retrieve new CID
+3. **Unstoppable Domains API** — auto-update the `dweb.ipfs.hash` record on-chain with the new CID
+4. **Result** — every `git push` updates both GitHub Pages (`plan.robotfantome.com`) AND IPFS (`robotfantome.crypto`) automatically
+
+**Decision trigger:** Implement IPFS deploy when `robotfantome.com` v1 is live and the full site is worth decentralizing. Not before.
+
+See [Roadmap](projects/roadmap.md) for the backlog task.
+
+---
+
 ## Adding a New Client
 
 Copy this template and fill it in before building any client UI:
