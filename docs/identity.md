@@ -23,7 +23,7 @@ No one else has this combination:
 - **Trilingual: English · Portuguese · Spanish** — the Brazilian karting community is the dominant force in US karting. Pitches, sells, supports, and builds relationships in Portuguese natively. No competitor has this access without a translator.
 - **20 years of customer-facing roles** — hospitality management, multilingual concierge, healthcare marketing, legal IT. Knows how real businesses work before they have tech.
 - **Two music careers** — robot fantôme (punk/indie/rock) AND Bach Festival Choir (classical, world-class). Both real. Both 10+ years.
-- **Open-source and sustainability** — brand differentiator, not a constraint
+- **Open-source and sustainability** — not a brand value, a lived practice. Wildlife refuge volunteer, Vipassana kitchen waste management, culinary training at a social enterprise. This predates the business plan.
 - **Zero CAC at the track** — surrounded by potential customers every weekend
 
 ---
@@ -51,14 +51,16 @@ The punk music project. Indie/Punk/Rock. EP with 5 songs released and live.
 
 ## Bach Festival Choir
 
-~10 years as a member of the [Bach Festival Society of Winter Park](https://www.bachfestivalflorida.org).
+Member since August 2017 — the [Bach Festival Society of Winter Park](https://www.bachfestivalflorida.org).
 
+- **Voice part:** First Bass
 - Audition-only, 150-voice choir + full orchestra. Founded 1935.
 - WSJ: "by any possible standard, one of the finest organizations of its kind in America"
 - PBS appearances. Tours with the London Symphony Orchestra. Italian tour 2025.
 - Repertoire: Bach, Verdi, Mozart, Brahms, Rossini — the canon of choral masterworks
-- Monday evening rehearsals, mid-August through May
+- Monday evening rehearsals, mid-August through May — hard schedule constraint
 - ~150 musicians in Central Florida = warm professional network
+- **Also serves as Usher** (Apr 2020–present) — front-of-house, guest experience at concerts
 
 The contrast between choir and punk is not a contradiction — it's the most honest version of who Luiz is. Bach on Monday, punk on Saturday.
 
@@ -69,7 +71,7 @@ The contrast between choir and punk is not a contradiction — it's the most hon
 | Period | Credential | Institution |
 |--------|-----------|-------------|
 | 2023–2025 | **Associate of Science — Information Technology** | Purdue Global |
-| 2018–2019 | Culinary Arts Certificate — Chef Training | Pathlight Kitchen · Teacher Assistant · Community Volunteer |
+| 2018–2019 | Culinary Arts Certificate — Chef Training | Pathlight Kitchen (a Pathlight HOME program) · Teacher Assistant · Community Volunteer |
 | 2017 | Back-End Development (Engineer's degree) | The Iron Yard, Orlando · Community Advocate · Interpreter |
 | 2004–2006 | High School Diploma — General Studies | Dr. Phillips High School, Orlando · Battle of the Bands · Academic Excellence Honor Roll · Young Democrats |
 | 2002 | Hardware (Technical Certificate) | Fatec Sebrae, Brazil |
@@ -113,6 +115,28 @@ The Iron Yard (2017) covered back-end. freeCodeCamp (2023) filled in the front-e
 | **Hospitality** | Hotel Management · Front Desk · Concierge · Bartending · Multilingual guest services |
 | **Communication** | Public Speaking · Trilingual (EN/PT/ES) · Brazilian Portuguese translation · Customer Service |
 | **Leadership** | Team Leadership · Housekeeping department management (20 staff) · Problem Solving |
+
+---
+
+## Volunteering
+
+| Period | Role | Organization | Domain |
+|--------|------|--------------|--------|
+| Aug 2017–present | **Musician (First Bass)** | Bach Festival Society of Winter Park | Arts & Culture |
+| Apr 2020–present | **Usher** | Bach Festival Society of Winter Park | Arts & Culture |
+| Apr 2021–Sep 2021 | Clinic Assistant | Back To Nature Wildlife Refuge | Animal Welfare |
+| Jan 2018–Jul 2019 | Teacher Assistant | Pathlight HOME | Social Services |
+| Apr 2022 | Kitchen Volunteer / Server | Southeast Vipassana Center, Dhamma Patapa | Health |
+
+### Notes
+
+**Pathlight HOME** — social services org supporting adults with intellectual/developmental disabilities. The culinary arts certificate came through their Pathlight Kitchen job-training program; the teacher assistant volunteer role ran simultaneously. One community, two commitments.
+
+**Back To Nature Wildlife Refuge** — animal rescue and rehabilitation. Duties: property maintenance, clinic work, rescue intake, daily animal nutrition, donation pickup. Six months, hands-on.
+
+**Southeast Vipassana Center, Dhamma Patapa** — served a 10-day silent meditation course as kitchen volunteer. Led daily task flow, oversaw proper sorting of all kitchen waste: recyclables, biodegradable compost, and hauling to designated facilities. *"With plenty of Metta."*
+
+The zero-waste principle isn't a brand value — it's a practice. Wildlife refuge, composting at a meditation retreat, culinary training at a social enterprise. These came before the business plan.
 
 ---
 
