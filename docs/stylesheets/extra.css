@@ -182,3 +182,458 @@ code {
     display: none !important;
   }
 }
+
+/* ============================================================
+   GITHUB PROFILE PAGE — home page layout
+   ============================================================ */
+
+/* Expand content inner when profile wrapper is present */
+.md-content__inner:has(.gh-profile-wrapper) {
+  max-width: 100% !important;
+  padding-right: 0.8rem;
+}
+
+.gh-profile-wrapper {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  font-family: 'JetBrains Mono', monospace;
+  color: #e0e0e0;
+  margin-top: -0.25rem;
+}
+
+/* ── SIDEBAR ── */
+.gh-sidebar {
+  width: 220px;
+  flex-shrink: 0;
+}
+
+.gh-avatar-box {
+  width: 196px;
+  height: 196px;
+  border-radius: 50%;
+  border: 2px solid #ff6d00;
+  box-shadow: 0 0 22px rgba(255,109,0,0.45), 0 0 48px rgba(255,109,0,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 78px;
+  background: #111827;
+  margin-bottom: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Scanline overlay */
+.gh-avatar-box::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 3px,
+    rgba(0,0,0,0.18) 3px,
+    rgba(0,0,0,0.18) 4px
+  );
+  pointer-events: none;
+}
+
+.gh-fullname {
+  font-size: 1.2rem !important;
+  font-weight: 700 !important;
+  color: #e0e0e0 !important;
+  margin: 0 0 0.2rem !important;
+  padding: 0 !important;
+  border: none !important;
+  line-height: 1.3 !important;
+  letter-spacing: 0 !important;
+}
+
+.gh-login {
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin: 0 0 0.75rem;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.gh-bio {
+  font-size: 0.82rem;
+  color: #e0e0e0;
+  margin: 0 0 1rem;
+  line-height: 1.5;
+}
+
+.gh-connect-btn {
+  display: block;
+  width: 100%;
+  padding: 0.4rem 0;
+  background: transparent;
+  border: 1px solid #ff6d00;
+  color: #ff6d00 !important;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none !important;
+  margin-bottom: 1.25rem;
+  transition: background 0.15s, color 0.15s;
+  box-sizing: border-box;
+}
+
+.gh-connect-btn:hover {
+  background: #ff6d00 !important;
+  color: #0d0d0d !important;
+  text-decoration: none !important;
+}
+
+/* Stats row */
+.gh-stats-row {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid #1f2937;
+}
+
+.gh-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.gh-stat-num {
+  color: #ff6d00;
+  font-weight: 700;
+  font-size: 0.85rem;
+  line-height: 1;
+}
+
+.gh-stat-label {
+  color: #6b7280;
+  font-size: 0.62rem;
+  line-height: 1;
+}
+
+/* Info list */
+.gh-profile-wrapper .gh-info-list {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.gh-profile-wrapper .gh-info-list li {
+  font-size: 0.78rem;
+  color: #e0e0e0;
+  padding: 0.28rem 0 !important;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 !important;
+  border: none;
+}
+
+.gh-profile-wrapper .gh-info-list a {
+  color: #ff6d00 !important;
+  text-decoration: none !important;
+}
+
+.gh-profile-wrapper .gh-info-list a:hover {
+  text-decoration: underline !important;
+  color: #ff003c !important;
+}
+
+/* ── MAIN CONTENT ── */
+.gh-main {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Tabs nav */
+.gh-tabs-nav {
+  display: flex;
+  border-bottom: 1px solid #1f2937;
+  margin-bottom: 1.5rem;
+  gap: 0;
+  overflow-x: auto;
+}
+
+.gh-tab-item {
+  padding: 0.55rem 1rem;
+  font-size: 0.8rem;
+  color: #6b7280;
+  text-decoration: none !important;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  white-space: nowrap;
+  transition: color 0.15s;
+  font-family: 'JetBrains Mono', monospace;
+  display: inline-flex;
+  align-items: center;
+}
+
+.gh-tab-item:hover {
+  color: #e0e0e0;
+  text-decoration: none !important;
+}
+
+.gh-tab-item.active {
+  color: #e0e0e0;
+  border-bottom-color: #ff6d00;
+  font-weight: 600;
+}
+
+/* Section header */
+.gh-section-header {
+  font-size: 0.8rem;
+  color: #e0e0e0;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* ── PINNED CARDS ── */
+.gh-pinned-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.gh-card {
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 6px;
+  padding: 0.9rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  transition: border-color 0.15s;
+}
+
+.gh-card:hover {
+  border-color: rgba(255,109,0,0.4);
+}
+
+.gh-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.gh-card-icon {
+  color: #6b7280;
+  font-size: 0.75rem;
+}
+
+.gh-card-name {
+  font-size: 0.85rem !important;
+  font-weight: 600;
+  color: #ff6d00 !important;
+  text-decoration: none !important;
+}
+
+.gh-card-name:hover {
+  text-decoration: underline !important;
+  color: #ff003c !important;
+}
+
+.gh-card-desc {
+  font-size: 0.73rem;
+  color: #6b7280;
+  line-height: 1.45;
+  flex: 1;
+  margin: 0;
+}
+
+.gh-card-footer {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.72rem;
+  color: #6b7280;
+  margin-top: 0.25rem;
+}
+
+.gh-lang-dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ── CONTRIBUTION GRAPH ── */
+.gh-contrib-section {
+  margin-bottom: 1.25rem;
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+.gh-contrib-header {
+  font-size: 0.8rem;
+  color: #e0e0e0;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.gh-contrib-outer {
+  display: flex;
+  align-items: flex-start;
+}
+
+.gh-day-labels {
+  display: grid;
+  grid-template-rows: repeat(7, 11px);
+  gap: 2px;
+  font-size: 9px;
+  color: #6b7280;
+  text-align: right;
+  padding-right: 6px;
+  padding-top: 18px; /* offset for month labels */
+  flex-shrink: 0;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.gh-graph-wrapper {
+  overflow-x: auto;
+  flex: 1;
+}
+
+.gh-month-labels {
+  display: grid;
+  gap: 2px;
+  margin-bottom: 4px;
+  height: 14px;
+  font-size: 9px;
+  color: #6b7280;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.gh-month-labels span {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.gh-contrib-cells {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 2px;
+}
+
+.gh-cell {
+  width: 11px;
+  height: 11px;
+  border-radius: 2px;
+  cursor: default;
+  transition: opacity 0.12s;
+}
+
+.gh-cell:hover {
+  opacity: 0.75;
+  outline: 1px solid rgba(255,255,255,0.25);
+  outline-offset: 1px;
+}
+
+.gh-cell-empty {
+  background: transparent !important;
+  cursor: default;
+}
+
+.gh-contrib-legend {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 10px;
+  color: #6b7280;
+  margin-top: 0.75rem;
+  justify-content: flex-end;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.gh-legend-box {
+  width: 11px;
+  height: 11px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+/* ── RECENT ACTIVITY ── */
+.gh-activity-section {
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+.gh-profile-wrapper .gh-commits-list {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.gh-commit-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.45rem 0 !important;
+  border-bottom: 1px solid #1f2937;
+  font-size: 0.76rem;
+  margin: 0 !important;
+}
+
+.gh-commit-item:last-child {
+  border-bottom: none;
+}
+
+.gh-commit-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ff6d00;
+  flex-shrink: 0;
+}
+
+.gh-commit-msg {
+  color: #e0e0e0;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.gh-commit-time {
+  color: #6b7280;
+  flex-shrink: 0;
+  font-size: 0.7rem;
+}
+
+.gh-muted { color: #6b7280; }
+
+/* ── RESPONSIVE ── */
+@media screen and (max-width: 60em) {
+  .gh-profile-wrapper {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .gh-sidebar {
+    width: 100%;
+  }
+
+  .gh-avatar-box {
+    width: 128px;
+    height: 128px;
+    font-size: 52px;
+  }
+
+  .gh-pinned-grid {
+    grid-template-columns: 1fr;
+  }
+}

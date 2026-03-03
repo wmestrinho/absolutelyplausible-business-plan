@@ -1,95 +1,153 @@
-# Absolutely Plausible — Business Plan
-
-> *Open Source // Cyberpunk // Revolutionary*
-
+---
+hide:
+  - toc
 ---
 
-## Who's Behind This
+<div class="gh-profile-wrapper">
 
-**Luiz Wagner Mestrinho.** Brazilian-born, Orlando-based. Trilingual (English · Portuguese · Spanish).
+  <!-- ── LEFT SIDEBAR ── -->
+  <aside class="gh-sidebar">
 
-Traveling karting mechanic. AI builder. Punk musician. Classical choir singer (first Bass, Bach Festival Society of Winter Park). Certified chef. Full-stack developer. 20+ years in tech — started at Fatec Sebrae in Brazil in 2002, finished an AS in Information Technology at Purdue Global in 2025.
+    <div class="gh-avatar-box">👻</div>
 
-**Absolutely Plausible** is the business umbrella. Founded July 2014. Everything built under it runs on open-source tools, costs $0/month in infrastructure, and is owned outright.
+    <div class="gh-fullname">Luiz Wagner Mestrinho</div>
+    <div class="gh-login">mestrinho</div>
+    <div class="gh-bio">Founder · Mechanic · Dev · Musician · Trilingual</div>
 
-The full story → [Identity](identity.md)
+    <a href="https://www.linkedin.com/in/mestrinho" target="_blank" rel="noopener" class="gh-connect-btn">Connect on LinkedIn</a>
 
----
+    <div class="gh-stats-row">
+      <div class="gh-stat">
+        <span class="gh-stat-num">11+</span>
+        <span class="gh-stat-label">yrs · AP</span>
+      </div>
+      <div class="gh-stat">
+        <span class="gh-stat-num">80+</span>
+        <span class="gh-stat-label">events/yr</span>
+      </div>
+      <div class="gh-stat">
+        <span class="gh-stat-num">3</span>
+        <span class="gh-stat-label">languages</span>
+      </div>
+    </div>
 
-## The Unfair Advantage
+    <ul class="gh-info-list">
+      <li>📍 Orlando, FL</li>
+      <li>🌐 <a href="https://robotfantome.com" target="_blank" rel="noopener">robotfantome.com</a></li>
+      <li>💼 <a href="https://linkedin.com/in/mestrinho" target="_blank" rel="noopener">linkedin/mestrinho</a></li>
+      <li>🎵 First Bass · Bach Festival Society</li>
+      <li>🏎️ Traveling Mechanic · PCJ Karting</li>
+    </ul>
 
-The story no one else can tell: *classical choir singer + punk musician + karting mechanic + AI builder + trilingual hospitality veteran + certified chef*. Each one is real. All together it's a moat.
+  </aside>
 
-- **80+ karting events/year** — surrounded by potential customers, in Portuguese, zero ad spend
-- **Builds that ship** — hackFatura went from idea to live app in one session, $0/month
-- **AI-native** — agent infrastructure, automation, zero vendor lock-in
-- **Trilingual** — the Brazilian karting community is the dominant force in US karting
+  <!-- ── MAIN CONTENT ── -->
+  <main class="gh-main">
 
----
+    <!-- Tabs -->
+    <nav class="gh-tabs-nav">
+      <a class="gh-tab-item active" href="#">Overview</a>
+      <a class="gh-tab-item" href="strategy/">Strategy</a>
+      <a class="gh-tab-item" href="timeline/">Timeline</a>
+      <a class="gh-tab-item" href="projects/roadmap/">Roadmap</a>
+    </nav>
 
-## Three Revenue Streams
+    <!-- Pinned -->
+    <div class="gh-section-header">📌 Pinned</div>
+    <div class="gh-pinned-grid">
 
-| Priority | Stream | Offer | Status |
-|----------|--------|-------|--------|
-| **#1** | AI Consulting | Audits ($200), workflow builds, retainers ($750-1,500/mo) | Building |
-| **#2** | hackFatura | Custom trackside app builds ($500) → SaaS | Building |
-| **#3** | Content + Music | LinkedIn, YouTube, Gumroad, robot fantôme EP | Building |
-| — | Mechanic Work | PCJ / Parazinho Chassis Jig — primary baseline income | Active |
+      <div class="gh-card">
+        <div class="gh-card-header">
+          <span class="gh-card-icon">◈</span>
+          <a class="gh-card-name" href="projects/hackfatura/">hackFatura</a>
+        </div>
+        <div class="gh-card-desc">Field management system for PCJ karting — race entry, mechanic tracking, and event data.</div>
+        <div class="gh-card-footer">
+          <span class="gh-lang-dot" style="background:#f1e05a"></span>
+          <span>JavaScript</span>
+        </div>
+      </div>
 
----
+      <div class="gh-card">
+        <div class="gh-card-header">
+          <span class="gh-card-icon">◈</span>
+          <a class="gh-card-name" href="strategy/">AI Consulting</a>
+        </div>
+        <div class="gh-card-desc">Audits $200 · Builds $750–2,500 · Retainers $750–1,500/mo</div>
+        <div class="gh-card-footer">
+          <span class="gh-lang-dot" style="background:#3572A5"></span>
+          <span>Python</span>
+        </div>
+      </div>
 
-## Financial Reality
+      <div class="gh-card">
+        <div class="gh-card-header">
+          <span class="gh-card-icon">◈</span>
+          <a class="gh-card-name" href="identity/">robot fantôme EP</a>
+        </div>
+        <div class="gh-card-desc">5-track punk/indie/rock EP · zero licensing costs · built for sync and live use</div>
+        <div class="gh-card-footer">
+          <span class="gh-lang-dot" style="background:#ff003c"></span>
+          <span>Music</span>
+        </div>
+      </div>
 
-| | Amount |
-|---|---|
-| Monthly survival minimum | $1,750/mo |
-| Mechanic income (PCJ) | $750/mo |
-| Online income target | $1,500/mo |
-| PCJ status | Stays — online revenue is additive, not a replacement |
+      <div class="gh-card">
+        <div class="gh-card-header">
+          <span class="gh-card-icon">◈</span>
+          <a class="gh-card-name" href="identity/">Bach Festival Choir</a>
+        </div>
+        <div class="gh-card-desc">First Bass · 8 yrs · Bach Festival Society of Winter Park · PBS tours</div>
+        <div class="gh-card-footer">
+          <span class="gh-lang-dot" style="background:#DAA520"></span>
+          <span>Classical</span>
+        </div>
+      </div>
 
----
+    </div>
 
-## Current Focus (March 2026)
+    <!-- Contribution graph -->
+    <div class="gh-contrib-section">
+      <div class="gh-contrib-header">
+        <span id="gh-contrib-total">Loading contributions…</span>
+      </div>
+      <div class="gh-contrib-outer">
+        <div class="gh-day-labels">
+          <span></span>
+          <span>Mon</span>
+          <span></span>
+          <span>Wed</span>
+          <span></span>
+          <span>Fri</span>
+          <span></span>
+        </div>
+        <div class="gh-graph-wrapper">
+          <div class="gh-month-labels" id="gh-contrib-months"></div>
+          <div class="gh-contrib-cells" id="gh-contrib-cells"></div>
+        </div>
+      </div>
+      <div class="gh-contrib-legend">
+        <span>Less</span>
+        <div class="gh-legend-box" style="background:rgb(31,41,55)"></div>
+        <div class="gh-legend-box" style="background:rgba(255,109,0,0.25)"></div>
+        <div class="gh-legend-box" style="background:rgba(255,109,0,0.5)"></div>
+        <div class="gh-legend-box" style="background:rgba(255,109,0,0.75)"></div>
+        <div class="gh-legend-box" style="background:rgb(255,109,0)"></div>
+        <span>More</span>
+      </div>
+    </div>
 
-**Done:**
+    <!-- Recent activity -->
+    <div class="gh-activity-section">
+      <div class="gh-section-header">⚡ Recent Activity</div>
+      <ul id="gh-commits" class="gh-commits-list">
+        <li class="gh-commit-item">
+          <span class="gh-commit-dot"></span>
+          <span class="gh-commit-msg gh-muted">Fetching commits…</span>
+        </li>
+      </ul>
+    </div>
 
-- [x] Workspace and agent infrastructure set up
-- [x] hackFatura built for PCJ — live at [wmestrinho.github.io/hackFatura](https://wmestrinho.github.io/hackFatura)
-- [x] Brand identity documented
-- [x] Business strategy and 6-month timeline written
-- [x] Full identity profile documented (career, education, certifications, volunteering)
-- [x] DNS: `mech.robotfantome.com` CNAME configured *(propagating)*
+  </main>
 
-**In progress:**
-
-- [ ] hackFatura: connect Google Sheets backend end-to-end
-- [ ] `mech.robotfantome.com` fully resolves after DNS propagation
-- [ ] First custom hackFatura build sold ($500)
-- [ ] First AI Audit delivered ($200)
-- [ ] Gumroad product live ($29)
-- [ ] robotfantome.com v1 live
-
-See [Roadmap & Checklist](projects/roadmap.md) for the full weekly tracker.
-
----
-
-## The Plan in One Sentence
-
-Sell custom field management apps to karting mechanics (in Portuguese and English), consult on AI automation for small businesses, and build in public — all under the Robot Fantôme brand, at $0/month infrastructure cost.
-
-See [Strategy](strategy.md) and [Timeline](timeline.md) for the full picture.
-
----
-
-## Principles
-
-- **$0 infrastructure** until revenue justifies spend
-- **100% open-source** — always
-- **Zero waste / zero pollution** — a practice, not a preference
-- **Build in public** — transparency is the brand
-- **Charge early** — validate with money, not likes
-- **10-15 hours/week** — plan for reality, not fantasy
-
----
-
-*Luiz Wagner Mestrinho · [robotfantome.com](https://robotfantome.com)*
+</div>
