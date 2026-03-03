@@ -26,6 +26,8 @@ theme:
   icon:
     repo: fontawesome/brands/github
 
+copyright: "v0.2.0 beta · Robot Fantôme · Absolutely Plausible"
+
 extra_css:
   - stylesheets/extra.css
 
