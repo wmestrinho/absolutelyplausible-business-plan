@@ -1,13 +1,25 @@
-/* profile.js — GitHub-style contribution graph + recent activity
-   Runs only on pages that have #gh-contrib-cells (the home page). */
+/* profile.js — GitHub-style layout injected on every page
+   Home page: contribution graph + activity (elements already in index.md)
+   All other pages: profile sidebar + tab nav injected dynamically         */
 
 (function () {
   'use strict';
 
+  /* ─── Config ─── */
   const REPO = 'wmestrinho/absolutelyplausible-business-plan';
   const MONTH_NAMES = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 
-  /* ── Color scale ── */
+  const NAV_TABS = [
+    { label: 'Overview',  href: '/',           re: /^\/$/ },
+    { label: 'Strategy',  href: '/strategy/',  re: /\/strategy/ },
+    { label: 'Timeline',  href: '/timeline/',  re: /\/timeline/ },
+    { label: 'Identity',  href: '/identity/',  re: /\/identity/ },
+    { label: 'Brand',     href: '/brand/',     re: /\/brand/ },
+    { label: 'Projects',  href: '/projects/',  re: /\/projects/ },
+    { label: 'Clients',   href: '/clients/',   re: /\/clients/ },
+  ];
+
+  /* ─── Color scale ─── */
   function getColor(count) {
     if (count === 0) return 'rgb(31,41,55)';
     if (count === 1) return 'rgba(255,109,0,0.25)';
@@ -16,7 +28,7 @@
     return 'rgb(255,109,0)';
   }
 
-  /* ── Relative time ── */
+  /* ─── Relative time ─── */
   function relativeTime(iso) {
     const diffDays = Math.floor((Date.now() - new Date(iso).getTime()) / 86400000);
     if (diffDays === 0) return 'today';
@@ -28,7 +40,7 @@
     return years + ' year' + (years > 1 ? 's' : '') + ' ago';
   }
 
-  /* ── Fetch commits (paginated, last year) ── */
+  /* ─── Fetch commits (paginated, last year) ─── */
   async function fetchCommits() {
     const since = new Date();
     since.setFullYear(since.getFullYear() - 1);
@@ -49,7 +61,7 @@
     return all;
   }
 
-  /* ── Build commit → date map ── */
+  /* ─── Commit → date map ─── */
   function buildMap(commits) {
     const map = {};
     commits.forEach(function (c) {
@@ -59,52 +71,42 @@
     return map;
   }
 
-  /* ── Build contribution graph ── */
+  /* ─── Contribution graph ─── */
   function buildGraph(map) {
     const cellsEl  = document.getElementById('gh-contrib-cells');
     const monthsEl = document.getElementById('gh-contrib-months');
     const totalEl  = document.getElementById('gh-contrib-total');
     if (!cellsEl) return 0;
 
-    /* Start: Sunday 52 full weeks (364 days) back */
     const today = new Date();
     today.setHours(23, 59, 59, 0);
-
     const start = new Date(today);
     start.setDate(start.getDate() - 363);
     start.setDate(start.getDate() - start.getDay()); // back to Sunday
     start.setHours(0, 0, 0, 0);
 
-    /* Collect all days */
     const days = [];
     const cur = new Date(start);
-    while (cur <= today) {
-      days.push(new Date(cur));
-      cur.setDate(cur.getDate() + 1);
-    }
-    const numWeeks = Math.ceil(days.length / 7);
-    const colTemplate = 'repeat(' + numWeeks + ', 11px)';
+    while (cur <= today) { days.push(new Date(cur)); cur.setDate(cur.getDate() + 1); }
 
-    /* Month labels */
+    const numWeeks = Math.ceil(days.length / 7);
+    const colTpl = 'repeat(' + numWeeks + ', 11px)';
+
     if (monthsEl) {
-      monthsEl.style.gridTemplateColumns = colTemplate;
+      monthsEl.style.gridTemplateColumns = colTpl;
       let lastMonth = -1;
       for (let w = 0; w < numWeeks; w++) {
         const span = document.createElement('span');
         const idx = w * 7;
         if (idx < days.length) {
           const m = days[idx].getMonth();
-          if (m !== lastMonth) {
-            span.textContent = MONTH_NAMES[m];
-            lastMonth = m;
-          }
+          if (m !== lastMonth) { span.textContent = MONTH_NAMES[m]; lastMonth = m; }
         }
         monthsEl.appendChild(span);
       }
     }
 
-    /* Cell grid */
-    cellsEl.style.gridTemplateColumns = colTemplate;
+    cellsEl.style.gridTemplateColumns = colTpl;
     cellsEl.style.gridTemplateRows = 'repeat(7, 11px)';
 
     let total = 0;
@@ -120,7 +122,6 @@
       cellsEl.appendChild(cell);
     });
 
-    /* Pad last week */
     const rem = numWeeks * 7 - days.length;
     for (let i = 0; i < rem; i++) {
       const pad = document.createElement('div');
@@ -128,13 +129,11 @@
       cellsEl.appendChild(pad);
     }
 
-    if (totalEl) {
-      totalEl.textContent = total + ' contribution' + (total !== 1 ? 's' : '') + ' in the last year';
-    }
+    if (totalEl) totalEl.textContent = total + ' contribution' + (total !== 1 ? 's' : '') + ' in the last year';
     return total;
   }
 
-  /* ── Build recent activity list ── */
+  /* ─── Recent activity ─── */
   function buildActivity(commits) {
     const listEl = document.getElementById('gh-commits');
     if (!listEl) return;
@@ -146,65 +145,115 @@
     listEl.innerHTML = recent.map(function (c) {
       const msg = c.commit.message.split('\n')[0];
       const short = msg.length > 72 ? msg.slice(0, 72) + '\u2026' : msg;
-      const time = relativeTime(c.commit.author.date);
       return '<li class="gh-commit-item">' +
         '<span class="gh-commit-dot"></span>' +
         '<span class="gh-commit-msg">' + short + '</span>' +
-        '<span class="gh-commit-time">' + time + '</span>' +
+        '<span class="gh-commit-time">' + relativeTime(c.commit.author.date) + '</span>' +
         '</li>';
     }).join('');
   }
 
-  /* ── Floating tooltip ── */
+  /* ─── Tooltip ─── */
   function initTooltip() {
     const tip = document.createElement('div');
     tip.id = 'gh-cell-tooltip';
     Object.assign(tip.style, {
-      position: 'fixed',
-      display: 'none',
-      background: '#1f2937',
-      border: '1px solid #374151',
-      color: '#e0e0e0',
-      fontFamily: "'JetBrains Mono', monospace",
-      fontSize: '11px',
-      padding: '4px 8px',
-      borderRadius: '4px',
-      pointerEvents: 'none',
-      zIndex: '9999',
-      whiteSpace: 'nowrap'
+      position: 'fixed', display: 'none',
+      background: '#1f2937', border: '1px solid #374151',
+      color: '#e0e0e0', fontFamily: "'JetBrains Mono', monospace",
+      fontSize: '11px', padding: '4px 8px', borderRadius: '4px',
+      pointerEvents: 'none', zIndex: '9999', whiteSpace: 'nowrap'
     });
     document.body.appendChild(tip);
-
     document.addEventListener('mouseover', function (e) {
       const cell = e.target.closest && e.target.closest('.gh-cell');
-      if (!cell || cell.classList.contains('gh-cell-empty')) {
-        tip.style.display = 'none';
-        return;
-      }
-      const date  = cell.getAttribute('data-date');
+      if (!cell || cell.classList.contains('gh-cell-empty')) { tip.style.display = 'none'; return; }
       const count = parseInt(cell.getAttribute('data-count'), 10);
-      tip.textContent = (count === 0 ? 'No contributions' : count + ' commit' + (count !== 1 ? 's' : '')) + ' on ' + date;
+      tip.textContent = (count === 0 ? 'No contributions' : count + ' commit' + (count !== 1 ? 's' : '')) + ' on ' + cell.getAttribute('data-date');
       tip.style.display = 'block';
     });
-
     document.addEventListener('mousemove', function (e) {
       tip.style.left = (e.clientX + 12) + 'px';
       tip.style.top  = (e.clientY - 32) + 'px';
     });
-
     document.addEventListener('mouseout', function (e) {
-      if (!e.target.closest || !e.target.closest('.gh-cell')) {
-        tip.style.display = 'none';
-      }
+      if (!e.target.closest || !e.target.closest('.gh-cell')) tip.style.display = 'none';
     });
   }
 
-  /* ── Entry point ── */
+  /* ─── Build sidebar HTML (compact = smaller avatar for content pages) ─── */
+  function buildSidebarHTML(compact) {
+    var avatarStyle = compact ? ' style="width:120px;height:120px;font-size:46px"' : '';
+    return (
+      '<aside class="gh-sidebar">' +
+        '<div class="gh-avatar-box"' + avatarStyle + '>👻</div>' +
+        '<div class="gh-fullname">Luiz Wagner Mestrinho</div>' +
+        '<div class="gh-login">mestrinho</div>' +
+        '<div class="gh-bio">Founder · Mechanic · Dev · Musician · Trilingual</div>' +
+        '<a href="https://www.linkedin.com/in/mestrinho" target="_blank" rel="noopener" class="gh-connect-btn">Connect on LinkedIn</a>' +
+        '<div class="gh-stats-row">' +
+          '<div class="gh-stat"><span class="gh-stat-num">11+</span><span class="gh-stat-label">yrs · AP</span></div>' +
+          '<div class="gh-stat"><span class="gh-stat-num">80+</span><span class="gh-stat-label">events/yr</span></div>' +
+          '<div class="gh-stat"><span class="gh-stat-num">3</span><span class="gh-stat-label">languages</span></div>' +
+        '</div>' +
+        '<ul class="gh-info-list">' +
+          '<li>📍 Orlando, FL</li>' +
+          '<li>🌐 <a href="https://robotfantome.com" target="_blank" rel="noopener">robotfantome.com</a></li>' +
+          '<li>💼 <a href="https://linkedin.com/in/mestrinho" target="_blank" rel="noopener">linkedin/mestrinho</a></li>' +
+          '<li>🎵 First Bass · Bach Festival Society</li>' +
+          '<li>🏎️ Traveling Mechanic · PCJ Karting</li>' +
+        '</ul>' +
+      '</aside>'
+    );
+  }
+
+  /* ─── Build tab nav HTML (active tab from current URL) ─── */
+  function buildTabsHTML() {
+    var path = window.location.pathname;
+    var tabs = NAV_TABS.map(function (t) {
+      var active = t.re.test(path) ? ' active' : '';
+      return '<a class="gh-tab-item' + active + '" href="' + t.href + '">' + t.label + '</a>';
+    }).join('');
+    return '<nav class="gh-tabs-nav">' + tabs + '</nav>';
+  }
+
+  /* ─── Inject sidebar + tab nav on non-home pages ─── */
+  function injectLayout() {
+    // Home page already has .gh-profile-wrapper in its HTML — skip
+    if (document.querySelector('.gh-profile-wrapper')) return;
+
+    var inner = document.querySelector('.md-content__inner');
+    if (!inner) return;
+
+    // Lift all existing page content into a document fragment
+    var frag = document.createDocumentFragment();
+    while (inner.firstChild) frag.appendChild(inner.firstChild);
+
+    // Wrap fragment in a .gh-main div and prepend the tab nav
+    var mainDiv = document.createElement('main');
+    mainDiv.className = 'gh-main';
+    mainDiv.innerHTML = buildTabsHTML();
+    mainDiv.appendChild(frag);
+
+    // Build the 2-column wrapper: sidebar + main
+    var wrapper = document.createElement('div');
+    wrapper.className = 'gh-profile-wrapper';
+    wrapper.innerHTML = buildSidebarHTML(true); // compact avatar on content pages
+    wrapper.appendChild(mainDiv);
+
+    inner.appendChild(wrapper);
+  }
+
+  /* ─── Entry point ─── */
   async function init() {
+    // Inject layout on all pages (no-op on home page)
+    injectLayout();
+
+    // Contribution graph + activity — home page only
     if (!document.getElementById('gh-contrib-cells')) return;
     initTooltip();
-    const commits  = await fetchCommits();
-    const map      = buildMap(commits);
+    const commits = await fetchCommits();
+    const map     = buildMap(commits);
     buildGraph(map);
     buildActivity(commits);
   }
