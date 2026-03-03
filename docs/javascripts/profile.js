@@ -208,40 +208,59 @@
     );
   }
 
-  /* ─── Build tab nav HTML (active tab from current URL) ─── */
-  function buildTabsHTML() {
+  /* ─── Build tab link items (no wrapper) ─── */
+  function buildTabLinksHTML() {
     var path = window.location.pathname;
-    var tabs = NAV_TABS.map(function (t) {
+    return NAV_TABS.map(function (t) {
       var active = t.re.test(path) ? ' active' : '';
       return '<a class="gh-tab-item' + active + '" href="' + t.href + '">' + t.label + '</a>';
     }).join('');
-    return '<nav class="gh-tabs-nav">' + tabs + '</nav>';
   }
 
-  /* ─── Inject sidebar + tab nav on non-home pages ─── */
+  /* ─── Inject full-width tab nav + sidebar on every page ─── */
   function injectLayout() {
-    // Home page already has .gh-profile-wrapper in its HTML — skip
-    if (document.querySelector('.gh-profile-wrapper')) return;
-
     var inner = document.querySelector('.md-content__inner');
     if (!inner) return;
 
-    // Lift all existing page content into a document fragment
+    // Measure MkDocs header height and expose as CSS variable so the
+    // sticky tab nav can sit flush against it when scrolling.
+    var mdHeader = document.querySelector('.md-header');
+    if (mdHeader) {
+      document.documentElement.style.setProperty(
+        '--gh-header-offset', mdHeader.offsetHeight + 'px'
+      );
+    }
+
+    // Home page: .gh-profile-wrapper already exists in static HTML.
+    // Move the .gh-tabs-nav out of .gh-main so it becomes full-width.
+    var existingWrapper = document.querySelector('.gh-profile-wrapper');
+    if (existingWrapper) {
+      var existingTabs = existingWrapper.querySelector('.gh-tabs-nav');
+      if (existingTabs) inner.insertBefore(existingTabs, existingWrapper);
+      return;
+    }
+
+    // Non-home pages: lift existing content, build sidebar + main column.
     var frag = document.createDocumentFragment();
     while (inner.firstChild) frag.appendChild(inner.firstChild);
 
-    // Wrap fragment in a .gh-main div and prepend the tab nav
+    // Full-width tab nav (above the grid)
+    var tabsNav = document.createElement('nav');
+    tabsNav.className = 'gh-tabs-nav';
+    tabsNav.innerHTML = buildTabLinksHTML();
+
+    // Main content column (no tabs inside)
     var mainDiv = document.createElement('main');
     mainDiv.className = 'gh-main';
-    mainDiv.innerHTML = buildTabsHTML();
     mainDiv.appendChild(frag);
 
-    // Build the 2-column wrapper: sidebar + main
+    // 2-column profile wrapper: sidebar + main
     var wrapper = document.createElement('div');
     wrapper.className = 'gh-profile-wrapper';
-    wrapper.innerHTML = buildSidebarHTML(true); // compact avatar on content pages
+    wrapper.innerHTML = buildSidebarHTML(true);
     wrapper.appendChild(mainDiv);
 
+    inner.appendChild(tabsNav);
     inner.appendChild(wrapper);
   }
 
