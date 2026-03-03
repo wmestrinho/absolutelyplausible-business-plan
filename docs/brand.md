@@ -90,20 +90,21 @@ Industrial, mechanical. Bold, grounded. Used in **hackFatura**.
 | `mech.robotfantome.com` | hackFatura (PCJ field management app) | DNS propagating |
 | `robotfantome.crypto` | Web3 / blockchain domain (Unstoppable Domains, Polygon) | Redirect → plan.robotfantome.com |
 
-### DNS Migration Plan
+### DNS & Hosting
 
-Current DNS provider: **Dreamhost**
-Target: **Namecheap** (registrar) + **Cloudflare** (DNS + CDN)
+**DNS:** Cloudflare (active) — `robotfantome.com` is live on Cloudflare nameservers.
+**Registrar:** Moving to Namecheap (planned — low priority while Cloudflare DNS is working).
 
-When migrating, all subdomain CNAME records are identical — just re-enter them at Cloudflare:
+**Hosting:** All projects deploy via **Cloudflare Pages** — direct GitHub integration, no GitHub Actions workflows needed.
 
-| Subdomain | Type | Value | Cloudflare proxy |
-|-----------|------|-------|-----------------|
-| `plan` | CNAME | `wmestrinho.github.io` | **DNS only** (grey cloud) |
-| `mech` | CNAME | `wmestrinho.github.io` | **DNS only** (grey cloud) |
+| Subdomain | Hosted on | Deploy trigger |
+|-----------|-----------|---------------|
+| `plan.robotfantome.com` | Cloudflare Pages | Push to `main` |
+| `mech.robotfantome.com` | Cloudflare Pages (or GitHub Pages) | Push to `main` |
+| `robotfantome.com` | Cloudflare Pages (when built) | Push to `main` |
 
-!!! warning "Cloudflare + GitHub Pages"
-    Always set GitHub Pages subdomains to **DNS only** (grey cloud) in Cloudflare. If proxied (orange cloud), GitHub Pages cannot provision the Let's Encrypt HTTPS certificate and the site will break.
+!!! note "Cloudflare Pages + DNS"
+    Since DNS is already on Cloudflare, adding a custom domain in Cloudflare Pages automatically creates the DNS record. No manual CNAME setup needed.
 
 ### robotfantome.crypto — Web3 Domain
 

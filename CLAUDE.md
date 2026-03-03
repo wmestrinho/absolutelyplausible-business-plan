@@ -48,11 +48,15 @@ docs/
 
 ## Deployment
 
-GitHub Actions (`.github/workflows/deploy.yml`) handles CI/CD:
-- Triggers on push to `main`
-- Installs `mkdocs-material`, runs `mkdocs build`, deploys `site/` to GitHub Pages
+**Cloudflare Pages** handles CI/CD — no GitHub Actions workflow needed.
 
-The `jekyll-gh-pages.yml` workflow is vestigial — `deploy.yml` is the active one.
+- Triggers automatically on every push to `main`
+- Build command: `pip install mkdocs-material && mkdocs build`
+- Build output directory: `site`
+- Python version: `3.11` (set via `.python-version` file)
+- Custom domain: `plan.robotfantome.com` (DNS managed by Cloudflare)
+
+The `site/` directory is gitignored — built by Cloudflare on each deploy, never committed.
 
 ## Brand Rules
 
