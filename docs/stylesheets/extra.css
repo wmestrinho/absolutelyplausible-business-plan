@@ -87,11 +87,15 @@ code {
 /* Tables */
 .md-typeset table:not([class]) {
   border: 1px solid #1f2937;
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .md-typeset table:not([class]) th {
   background-color: #111827;
   color: #ff6d00;
+  white-space: nowrap;
 }
 
 .md-typeset table:not([class]) tr:hover {
@@ -102,4 +106,79 @@ code {
 .md-footer {
   background-color: #0d0d0d;
   border-top: 1px solid #1f2937;
+}
+
+/* ============================================================
+   RESPONSIVE — Vertical monitor / mid-width display support
+   MkDocs Material collapses sidebar + tabs below 76.25em (1220px).
+   These overrides keep both visible from 60em (960px) upward.
+   Below 60em (mobile): standard drawer behaviour is preserved.
+   ============================================================ */
+
+/* Keep navigation tabs visible from 960px */
+@media screen and (min-width: 60em) {
+  .md-tabs {
+    display: flex !important;
+    background-color: #0d0d0d;
+    border-bottom: 1px solid #ff6d0022;
+  }
+
+  .md-tabs__list {
+    padding: 0;
+  }
+}
+
+/* Keep left sidebar visible and sticky from 960px */
+@media screen and (min-width: 60em) and (max-width: 76.1875em) {
+  /* Sidebar: switch from off-canvas drawer to sticky panel */
+  .md-sidebar--primary {
+    position: sticky !important;
+    top: 3.6rem !important; /* header + tabs height */
+    height: calc(100vh - 3.6rem) !important;
+    overflow-y: auto;
+    display: flex !important;
+    flex-shrink: 0;
+    background-color: #0d0d0d;
+    border-right: 1px solid #1f2937;
+    z-index: 5;
+  }
+
+  /* Remove the transform that slides sidebar off-screen */
+  .md-sidebar--primary .md-sidebar__scrollwrap {
+    max-height: none !important;
+    overflow-y: auto;
+  }
+
+  /* Prevent the drawer overlay from blocking content */
+  .md-overlay {
+    display: none !important;
+  }
+
+  /* Hide the hamburger toggle — sidebar is always visible */
+  .md-header__button.md-icon[for="__drawer"] {
+    display: none !important;
+  }
+
+  /* Layout: sidebar + content side by side */
+  .md-container {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .md-main {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .md-main__inner {
+    margin-left: 0;
+    padding-top: 1rem;
+  }
+}
+
+/* Secondary sidebar (table of contents) — hide on mid-width to save space */
+@media screen and (min-width: 60em) and (max-width: 76.1875em) {
+  .md-sidebar--secondary {
+    display: none !important;
+  }
 }
