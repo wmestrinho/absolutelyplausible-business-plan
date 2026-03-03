@@ -76,6 +76,15 @@ The contrast between choir and punk is not a contradiction — it's the most hon
 
 **The tech journey started in Brazil in 2002 — not at The Iron Yard in 2017.** Fatec Sebrae is a Brazilian technical college; this was the origin point before moving to the US.
 
+## Certifications
+
+| Issued | Credential | Issuer |
+|--------|-----------|--------|
+| Jan 2023 | Front End Development Libraries | freeCodeCamp |
+| Jan 2023 | Responsive Web Design | freeCodeCamp |
+
+The Iron Yard (2017) covered back-end. freeCodeCamp (2023) filled in the front-end gap. Purdue Global (2025) formalized the full picture. Full-stack by deliberate design.
+
 ---
 
 ## Career Background
