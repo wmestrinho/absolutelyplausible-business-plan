@@ -19,13 +19,13 @@
     { label: 'Clients',   href: '/clients/',   re: /\/clients/ },
   ];
 
-  /* ─── Color scale ─── */
+  /* ─── Color scale (warm off-white palette) ─── */
   function getColor(count) {
-    if (count === 0) return 'rgb(31,41,55)';
-    if (count === 1) return 'rgba(255,109,0,0.25)';
-    if (count <= 3) return 'rgba(255,109,0,0.5)';
-    if (count <= 5) return 'rgba(255,109,0,0.75)';
-    return 'rgb(255,109,0)';
+    if (count === 0) return '#eeece8';
+    if (count === 1) return 'rgba(212,98,26,0.2)';
+    if (count <= 3) return 'rgba(212,98,26,0.45)';
+    if (count <= 5) return 'rgba(212,98,26,0.72)';
+    return '#d4621a';
   }
 
   /* ─── Relative time ─── */
@@ -159,10 +159,11 @@
     tip.id = 'gh-cell-tooltip';
     Object.assign(tip.style, {
       position: 'fixed', display: 'none',
-      background: '#1f2937', border: '1px solid #374151',
-      color: '#e0e0e0', fontFamily: "'JetBrains Mono', monospace",
+      background: '#f8f6f3', border: '1px solid #dddad5',
+      color: '#2c2924', fontFamily: "'Share Tech Mono', monospace",
       fontSize: '11px', padding: '4px 8px', borderRadius: '4px',
-      pointerEvents: 'none', zIndex: '9999', whiteSpace: 'nowrap'
+      pointerEvents: 'none', zIndex: '9999', whiteSpace: 'nowrap',
+      boxShadow: '0 1px 4px rgba(44,41,36,0.12)'
     });
     document.body.appendChild(tip);
     document.addEventListener('mouseover', function (e) {

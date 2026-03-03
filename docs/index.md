@@ -128,11 +128,11 @@ hide:
       </div>
       <div class="gh-contrib-legend">
         <span>Less</span>
-        <div class="gh-legend-box" style="background:rgb(31,41,55)"></div>
-        <div class="gh-legend-box" style="background:rgba(255,109,0,0.25)"></div>
-        <div class="gh-legend-box" style="background:rgba(255,109,0,0.5)"></div>
-        <div class="gh-legend-box" style="background:rgba(255,109,0,0.75)"></div>
-        <div class="gh-legend-box" style="background:rgb(255,109,0)"></div>
+        <div class="gh-legend-box" style="background:#eeece8"></div>
+        <div class="gh-legend-box" style="background:rgba(212,98,26,0.2)"></div>
+        <div class="gh-legend-box" style="background:rgba(212,98,26,0.45)"></div>
+        <div class="gh-legend-box" style="background:rgba(212,98,26,0.72)"></div>
+        <div class="gh-legend-box" style="background:#d4621a"></div>
         <span>More</span>
       </div>
     </div>

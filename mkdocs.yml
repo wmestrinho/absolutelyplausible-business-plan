@@ -9,15 +9,13 @@ repo_url: https://github.com/wmestrinho/absolutelyplausible-business-plan
 theme:
   name: material
   palette:
-    scheme: slate
+    scheme: default
     primary: custom
     accent: custom
   font:
-    text: JetBrains Mono
-    code: JetBrains Mono
+    text: Share Tech Mono
+    code: Share Tech Mono
   features:
-    - navigation.tabs
-    - navigation.expand
     - navigation.top
     - search.highlight
     - search.suggest
@@ -26,7 +24,7 @@ theme:
   icon:
     repo: fontawesome/brands/github
 
-copyright: "v0.4.0 beta · Robot Fantôme · Absolutely Plausible"
+copyright: "v0.5.0 beta · Robot Fantôme · Absolutely Plausible"
 
 extra_css:
   - stylesheets/extra.css

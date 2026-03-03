@@ -1,321 +1,396 @@
-/* Absolutely Plausible — Cyberpunk Futuristic Theme */
+/* ============================================================
+   Absolutely Plausible — Business Plan
+   Palette: Robot Fantôme warm off-white (mirrors robotfantome.com)
+   Font: Share Tech Mono
+   ============================================================ */
 
+/* ── Custom Properties ── */
 :root {
-  --ap-bg: #0d0d0d;
-  --ap-primary: #ff6d00;
-  --ap-accent: #ff003c;
-  --ap-secondary: #7b2fff;
-  --ap-surface: #111827;
-  --ap-border: #1f2937;
-  --ap-text: #e0e0e0;
-  --ap-muted: #6b7280;
+  --rf-bg:          #f0eeeb;
+  --rf-surface:     #ffffff;
+  --rf-card:        #f8f6f3;
+  --rf-overlay:     #eeece8;
+  --rf-orange:      #d4621a;
+  --rf-copper:      #9c5220;
+  --rf-rust:        #6b3310;
+  --rf-text:        #2c2924;
+  --rf-muted:       #6b6560;
+  --rf-border:      #dddad5;
+  --rf-link:        #d4621a;
+  --rf-glow:        0 0 6px #d4621a44, 0 0 18px #d4621a18;
+  --rf-glow-copper: 0 0 6px #9c522044, 0 0 18px #9c522018;
+  --rf-card-shadow: 0 1px 3px rgba(44,41,36,0.08), 0 0 0 1px var(--rf-border);
+  --rf-radius:      6px;
 
-  --md-primary-fg-color: #ff6d00;
-  --md-primary-bg-color: #0d0d0d;
-  --md-accent-fg-color: #ff003c;
-  --md-default-bg-color: #0d0d0d;
-  --md-default-fg-color: #e0e0e0;
-  --md-code-bg-color: #111827;
+  /* MkDocs Material variable overrides */
+  --md-default-bg-color:   #f0eeeb;
+  --md-default-fg-color:   #2c2924;
+  --md-primary-fg-color:   #d4621a;
+  --md-primary-bg-color:   #e8e5e1;
+  --md-accent-fg-color:    #d4621a;
+  --md-code-bg-color:      #f8f6f3;
+  --md-code-fg-color:      #2c2924;
+  --md-typeset-a-color:    #d4621a;
+  --md-typeset-color:      #2c2924;
 }
 
-/* Header */
+/* ── Body & base ── */
+body {
+  background: var(--rf-bg) !important;
+  color: var(--rf-text) !important;
+  font-family: 'Share Tech Mono', 'JetBrains Mono', monospace !important;
+}
+
+/* Subtle CRT scanlines — body level */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg, transparent, transparent 3px,
+    rgba(0,0,0,0.025) 3px, rgba(0,0,0,0.025) 4px
+  );
+  pointer-events: none;
+  z-index: 9998;
+}
+
+/* ── Header ── */
 .md-header {
-  background-color: #0d0d0d;
-  border-bottom: 1px solid #ff6d0033;
+  background: #e8e5e1 !important;
+  border-bottom: 1px solid var(--rf-border);
+  box-shadow: none !important;
+  color: var(--rf-text) !important;
 }
 
-.md-header__title {
-  color: #ff6d00;
-  font-family: 'JetBrains Mono', monospace;
+.md-header__title,
+.md-header__topic {
+  color: var(--rf-text) !important;
+  font-family: 'Share Tech Mono', monospace !important;
 }
 
-/* Navigation */
-.md-nav__link--active,
-.md-nav__link:hover {
-  color: #ff6d00;
+.md-header__button,
+.md-header__button.md-icon {
+  color: var(--rf-muted) !important;
 }
 
-.md-tabs__link--active {
-  color: #ff6d00;
+.md-header__button:hover,
+.md-header__button.md-icon:hover {
+  color: var(--rf-orange) !important;
 }
 
-/* Content */
+/* Hide hamburger — no sidebar to toggle */
+.md-header__button[for="__drawer"] {
+  display: none !important;
+}
+
+/* ── Hide MkDocs nav: top tabs + left sidebar + right TOC ── */
+.md-tabs             { display: none !important; }
+.md-sidebar--primary { display: none !important; }
+.md-sidebar--secondary { display: none !important; }
+
+/* Content fills full width with no sidebar offset */
+.md-main__inner {
+  margin-left: 0 !important;
+}
+
+/* ── Content area ── */
 .md-content {
-  background-color: #0d0d0d;
+  background: transparent;
 }
 
-h1, h2, h3 {
-  color: #e0e0e0;
+.md-content__inner {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 1.5rem 1.5rem 3rem;
 }
 
-h1 { border-bottom: 1px solid #ff6d0044; padding-bottom: 0.3em; }
-
-a {
-  color: #ff6d00;
+/* ── Typography ── */
+.md-typeset {
+  color: var(--rf-text);
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.875rem;
+  line-height: 1.7;
 }
 
-a:hover {
-  color: #ff003c;
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4 {
+  color: var(--rf-text) !important;
+  font-family: 'Share Tech Mono', monospace !important;
 }
 
-/* Code blocks */
-code {
-  background-color: #111827;
-  color: #ff6d00;
-  border: 1px solid #1f2937;
+.md-typeset h1 {
+  font-size: 1.3rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--rf-border) !important;
+  padding-bottom: 0.4em;
+  margin-bottom: 1.2em;
 }
 
-/* Admonitions — cyberpunk style */
-.admonition {
-  border-left: 4px solid #ff6d00;
-  background-color: #111827;
+.md-typeset h2 {
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-top: 2em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--rf-border) !important;
 }
 
-.admonition.warning {
-  border-left-color: #ff003c;
+.md-typeset h3 {
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  color: var(--rf-copper) !important;
+  text-shadow: var(--rf-glow-copper);
 }
 
-.admonition.note {
-  border-left-color: #7b2fff;
+.md-typeset a {
+  color: var(--rf-link);
+  text-decoration: none;
+  transition: color 0.15s;
 }
 
-/* Task list checkboxes */
-.task-list-indicator::before {
-  background-color: #7b2fff;
+.md-typeset a:hover {
+  color: #e8874a;
 }
 
-/* Tables */
+/* ── Code ── */
+.md-typeset code {
+  background: var(--rf-card);
+  color: var(--rf-text);
+  border: 1px solid var(--rf-border);
+  border-radius: 3px;
+  font-size: 0.82em;
+  padding: 0.1em 0.35em;
+}
+
+.md-typeset pre {
+  background: var(--rf-card);
+  border: 1px solid var(--rf-border);
+  border-radius: var(--rf-radius);
+}
+
+.md-typeset pre code {
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+/* ── Tables ── */
 .md-typeset table:not([class]) {
-  border: 1px solid #1f2937;
+  border: 1px solid var(--rf-border);
+  border-collapse: collapse;
   display: block;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+  font-size: 0.82rem;
+  box-shadow: var(--rf-card-shadow);
+  border-radius: var(--rf-radius);
 }
 
 .md-typeset table:not([class]) th {
-  background-color: #111827;
-  color: #ff6d00;
+  background: var(--rf-overlay);
+  color: var(--rf-text);
+  border: 1px solid var(--rf-border);
   white-space: nowrap;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
 }
 
-.md-typeset table:not([class]) tr:hover {
-  background-color: #111827;
+.md-typeset table:not([class]) td {
+  border: 1px solid var(--rf-border);
+  background: var(--rf-surface);
+  color: var(--rf-text);
 }
 
-/* Footer */
-.md-footer {
-  background-color: #0d0d0d;
-  border-top: 1px solid #1f2937;
+.md-typeset table:not([class]) tr:nth-child(even) td {
+  background: var(--rf-card);
 }
+
+.md-typeset table:not([class]) tr:hover td {
+  background: var(--rf-overlay);
+}
+
+/* ── Admonitions ── */
+.admonition {
+  border-left: 4px solid var(--rf-orange);
+  background: var(--rf-card);
+  border-radius: 0 var(--rf-radius) var(--rf-radius) 0;
+}
+
+.admonition.warning { border-left-color: var(--rf-rust); }
+.admonition.note    { border-left-color: var(--rf-copper); }
+
+/* ── Search ── */
+.md-search__input {
+  background: var(--rf-surface) !important;
+  color: var(--rf-text) !important;
+  border: 1px solid var(--rf-border) !important;
+}
+
+.md-search__input::placeholder { color: var(--rf-muted) !important; }
+
+.md-search-result__article,
+.md-search-result__link:hover {
+  background: var(--rf-card) !important;
+}
+
+/* ── Footer ── */
+.md-footer,
+.md-footer-meta {
+  background: #e8e5e1 !important;
+  border-top: 1px solid var(--rf-border);
+  color: var(--rf-muted) !important;
+}
+
+.md-footer-copyright {
+  color: var(--rf-muted) !important;
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+}
+
+.md-footer-copyright a { color: var(--rf-copper) !important; }
 
 /* ============================================================
-   RESPONSIVE — Vertical monitor / mid-width display support
-   MkDocs Material collapses sidebar + tabs below 76.25em (1220px).
-   These overrides keep both visible from 60em (960px) upward.
-   Below 60em (mobile): standard drawer behaviour is preserved.
+   GITHUB PROFILE WRAPPER — injected on every page
    ============================================================ */
 
-/* Keep navigation tabs visible from 960px */
-@media screen and (min-width: 60em) {
-  .md-tabs {
-    display: flex !important;
-    background-color: #0d0d0d;
-    border-bottom: 1px solid #ff6d0022;
-  }
-
-  .md-tabs__list {
-    padding: 0;
-  }
-}
-
-/* Keep left sidebar visible and sticky from 960px */
-@media screen and (min-width: 60em) and (max-width: 76.1875em) {
-  /* Sidebar: switch from off-canvas drawer to sticky panel */
-  .md-sidebar--primary {
-    position: sticky !important;
-    top: 3.6rem !important; /* header + tabs height */
-    height: calc(100vh - 3.6rem) !important;
-    overflow-y: auto;
-    display: flex !important;
-    flex-shrink: 0;
-    background-color: #0d0d0d;
-    border-right: 1px solid #1f2937;
-    z-index: 5;
-  }
-
-  /* Remove the transform that slides sidebar off-screen */
-  .md-sidebar--primary .md-sidebar__scrollwrap {
-    max-height: none !important;
-    overflow-y: auto;
-  }
-
-  /* Prevent the drawer overlay from blocking content */
-  .md-overlay {
-    display: none !important;
-  }
-
-  /* Hide the hamburger toggle — sidebar is always visible */
-  .md-header__button.md-icon[for="__drawer"] {
-    display: none !important;
-  }
-
-  /* Layout: sidebar + content side by side */
-  .md-container {
-    display: flex;
-    align-items: flex-start;
-  }
-
-  .md-main {
-    flex: 1;
-    min-width: 0;
-  }
-
-  .md-main__inner {
-    margin-left: 0;
-    padding-top: 1rem;
-  }
-}
-
-/* Secondary sidebar (table of contents) — hide on mid-width to save space */
-@media screen and (min-width: 60em) and (max-width: 76.1875em) {
-  .md-sidebar--secondary {
-    display: none !important;
-  }
-}
-
-/* ============================================================
-   GITHUB PROFILE PAGE — home page layout
-   ============================================================ */
-
-/* Expand content inner when profile wrapper is present */
 .md-content__inner:has(.gh-profile-wrapper) {
-  max-width: 100% !important;
-  padding-right: 0.8rem;
+  max-width: 1280px !important;
+  padding: 2rem 1.5rem 3rem !important;
 }
 
 .gh-profile-wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: 276px 1fr;
   gap: 2rem;
   width: 100%;
-  font-family: 'JetBrains Mono', monospace;
-  color: #e0e0e0;
-  margin-top: -0.25rem;
+  font-family: 'Share Tech Mono', monospace;
+  color: var(--rf-text);
+  align-items: start;
 }
 
 /* ── SIDEBAR ── */
 .gh-sidebar {
-  width: 220px;
-  flex-shrink: 0;
+  position: sticky;
+  top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
 
 .gh-avatar-box {
-  width: 196px;
-  height: 196px;
+  width: 100%;
+  max-width: 240px;
+  aspect-ratio: 1;
   border-radius: 50%;
-  border: 2px solid #ff6d00;
-  box-shadow: 0 0 22px rgba(255,109,0,0.45), 0 0 48px rgba(255,109,0,0.15);
+  border: 2px solid var(--rf-border);
+  box-shadow: 0 0 0 1px #d4621a33;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 78px;
-  background: #111827;
+  font-size: 80px;
+  background: var(--rf-surface);
   margin-bottom: 1rem;
   position: relative;
   overflow: hidden;
 }
 
-/* Scanline overlay */
+/* Subtle scanlines on avatar */
 .gh-avatar-box::after {
   content: '';
   position: absolute;
   inset: 0;
   background: repeating-linear-gradient(
-    0deg,
-    transparent,
-    transparent 3px,
-    rgba(0,0,0,0.18) 3px,
-    rgba(0,0,0,0.18) 4px
+    0deg, transparent, transparent 3px,
+    rgba(0,0,0,0.04) 3px, rgba(0,0,0,0.04) 4px
   );
   pointer-events: none;
 }
 
 .gh-fullname {
   font-size: 1.2rem !important;
-  font-weight: 700 !important;
-  color: #e0e0e0 !important;
+  font-weight: 400 !important;
+  color: var(--rf-text) !important;
   margin: 0 0 0.2rem !important;
   padding: 0 !important;
   border: none !important;
   line-height: 1.3 !important;
-  letter-spacing: 0 !important;
+  letter-spacing: 0.04em !important;
 }
 
 .gh-login {
   font-size: 0.95rem;
-  color: #6b7280;
+  color: var(--rf-muted);
   margin: 0 0 0.75rem;
-  font-weight: 300;
   line-height: 1.4;
 }
 
 .gh-bio {
   font-size: 0.82rem;
-  color: #e0e0e0;
+  color: var(--rf-text);
   margin: 0 0 1rem;
-  line-height: 1.5;
+  line-height: 1.6;
+  border-top: 1px solid var(--rf-border);
+  padding-top: 0.75rem;
 }
 
 .gh-connect-btn {
   display: block;
   width: 100%;
-  padding: 0.4rem 0;
-  background: transparent;
-  border: 1px solid #ff6d00;
-  color: #ff6d00 !important;
-  font-family: 'JetBrains Mono', monospace;
+  padding: 0.35rem 0.75rem;
+  background: #e0ddd8;
+  border: 1px solid var(--rf-border);
+  color: var(--rf-text) !important;
+  font-family: 'Share Tech Mono', monospace;
   font-size: 0.8rem;
-  border-radius: 6px;
+  border-radius: var(--rf-radius);
   cursor: pointer;
   text-align: center;
   text-decoration: none !important;
   margin-bottom: 1.25rem;
-  transition: background 0.15s, color 0.15s;
+  letter-spacing: 0.04em;
+  transition: border-color 0.15s, background 0.15s;
   box-sizing: border-box;
 }
 
 .gh-connect-btn:hover {
-  background: #ff6d00 !important;
-  color: #0d0d0d !important;
+  border-color: var(--rf-orange) !important;
+  background: #d8d5d0 !important;
+  color: var(--rf-text) !important;
   text-decoration: none !important;
 }
 
 /* Stats row */
 .gh-stats-row {
   display: flex;
-  gap: 0.75rem;
-  margin-bottom: 1.25rem;
+  gap: 1rem;
+  margin-bottom: 1rem;
   flex-wrap: wrap;
-  padding-bottom: 1.25rem;
-  border-bottom: 1px solid #1f2937;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--rf-border);
 }
 
 .gh-stat {
   display: flex;
   flex-direction: column;
-  gap: 1px;
+  gap: 2px;
 }
 
 .gh-stat-num {
-  color: #ff6d00;
-  font-weight: 700;
-  font-size: 0.85rem;
+  color: var(--rf-orange);
+  font-size: 0.88rem;
   line-height: 1;
+  text-shadow: var(--rf-glow);
 }
 
 .gh-stat-label {
-  color: #6b7280;
+  color: var(--rf-muted);
   font-size: 0.62rem;
   line-height: 1;
+  letter-spacing: 0.04em;
 }
 
 /* Info list */
@@ -323,74 +398,79 @@ code {
   list-style: none !important;
   margin: 0 !important;
   padding: 0 !important;
+  padding-top: 0.75rem !important;
+  border-top: 1px solid var(--rf-border);
 }
 
 .gh-profile-wrapper .gh-info-list li {
   font-size: 0.78rem;
-  color: #e0e0e0;
-  padding: 0.28rem 0 !important;
+  color: var(--rf-text);
+  padding: 0.3rem 0 !important;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.5rem;
   margin: 0 !important;
   border: none;
+  line-height: 1.5;
 }
 
 .gh-profile-wrapper .gh-info-list a {
-  color: #ff6d00 !important;
+  color: var(--rf-link) !important;
   text-decoration: none !important;
 }
 
 .gh-profile-wrapper .gh-info-list a:hover {
+  color: #e8874a !important;
   text-decoration: underline !important;
-  color: #ff003c !important;
 }
 
 /* ── MAIN CONTENT ── */
 .gh-main {
-  flex: 1;
   min-width: 0;
 }
 
 /* Tabs nav */
 .gh-tabs-nav {
   display: flex;
-  border-bottom: 1px solid #1f2937;
+  border-bottom: 1px solid var(--rf-border);
   margin-bottom: 1.5rem;
-  gap: 0;
   overflow-x: auto;
+  scrollbar-width: none;
 }
+
+.gh-tabs-nav::-webkit-scrollbar { display: none; }
 
 .gh-tab-item {
   padding: 0.55rem 1rem;
   font-size: 0.8rem;
-  color: #6b7280;
+  color: var(--rf-muted);
   text-decoration: none !important;
   border-bottom: 2px solid transparent;
   margin-bottom: -1px;
   white-space: nowrap;
   transition: color 0.15s;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Share Tech Mono', monospace;
   display: inline-flex;
   align-items: center;
+  letter-spacing: 0.04em;
 }
 
 .gh-tab-item:hover {
-  color: #e0e0e0;
+  color: var(--rf-text);
   text-decoration: none !important;
 }
 
 .gh-tab-item.active {
-  color: #e0e0e0;
-  border-bottom-color: #ff6d00;
-  font-weight: 600;
+  color: var(--rf-text);
+  border-bottom-color: var(--rf-orange);
 }
 
 /* Section header */
 .gh-section-header {
-  font-size: 0.8rem;
-  color: #e0e0e0;
-  font-weight: 600;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--rf-muted);
   margin-bottom: 0.75rem;
   display: flex;
   align-items: center;
@@ -401,23 +481,25 @@ code {
 .gh-pinned-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 0.75rem;
+  gap: 0.875rem;
   margin-bottom: 2rem;
 }
 
 .gh-card {
-  background: #111827;
-  border: 1px solid #1f2937;
-  border-radius: 6px;
+  background: var(--rf-surface);
+  border: 1px solid var(--rf-border);
+  border-radius: var(--rf-radius);
   padding: 0.9rem 1rem;
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
-  transition: border-color 0.15s;
+  box-shadow: var(--rf-card-shadow);
+  transition: border-color 0.15s, box-shadow 0.15s;
 }
 
 .gh-card:hover {
-  border-color: rgba(255,109,0,0.4);
+  border-color: var(--rf-orange);
+  box-shadow: 0 2px 12px rgba(212,98,26,0.14), 0 0 0 1px var(--rf-orange);
 }
 
 .gh-card-header {
@@ -427,26 +509,26 @@ code {
 }
 
 .gh-card-icon {
-  color: #6b7280;
+  color: var(--rf-muted);
   font-size: 0.75rem;
 }
 
 .gh-card-name {
   font-size: 0.85rem !important;
-  font-weight: 600;
-  color: #ff6d00 !important;
+  color: var(--rf-orange) !important;
   text-decoration: none !important;
+  letter-spacing: 0.04em;
 }
 
 .gh-card-name:hover {
   text-decoration: underline !important;
-  color: #ff003c !important;
+  color: #e8874a !important;
 }
 
 .gh-card-desc {
   font-size: 0.73rem;
-  color: #6b7280;
-  line-height: 1.45;
+  color: var(--rf-muted);
+  line-height: 1.5;
   flex: 1;
   margin: 0;
 }
@@ -456,7 +538,7 @@ code {
   align-items: center;
   gap: 0.4rem;
   font-size: 0.72rem;
-  color: #6b7280;
+  color: var(--rf-muted);
   margin-top: 0.25rem;
 }
 
@@ -470,17 +552,18 @@ code {
 /* ── CONTRIBUTION GRAPH ── */
 .gh-contrib-section {
   margin-bottom: 1.25rem;
-  background: #111827;
-  border: 1px solid #1f2937;
-  border-radius: 6px;
+  background: var(--rf-surface);
+  border: 1px solid var(--rf-border);
+  border-radius: var(--rf-radius);
   padding: 1rem;
+  box-shadow: var(--rf-card-shadow);
 }
 
 .gh-contrib-header {
   font-size: 0.8rem;
-  color: #e0e0e0;
-  font-weight: 600;
+  color: var(--rf-text);
   margin-bottom: 0.75rem;
+  letter-spacing: 0.04em;
 }
 
 .gh-contrib-outer {
@@ -493,12 +576,12 @@ code {
   grid-template-rows: repeat(7, 11px);
   gap: 2px;
   font-size: 9px;
-  color: #6b7280;
+  color: var(--rf-muted);
   text-align: right;
   padding-right: 6px;
-  padding-top: 18px; /* offset for month labels */
+  padding-top: 18px;
   flex-shrink: 0;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Share Tech Mono', monospace;
 }
 
 .gh-graph-wrapper {
@@ -512,8 +595,8 @@ code {
   margin-bottom: 4px;
   height: 14px;
   font-size: 9px;
-  color: #6b7280;
-  font-family: 'JetBrains Mono', monospace;
+  color: var(--rf-muted);
+  font-family: 'Share Tech Mono', monospace;
 }
 
 .gh-month-labels span {
@@ -537,7 +620,7 @@ code {
 
 .gh-cell:hover {
   opacity: 0.75;
-  outline: 1px solid rgba(255,255,255,0.25);
+  outline: 1px solid rgba(44,41,36,0.3);
   outline-offset: 1px;
 }
 
@@ -551,10 +634,10 @@ code {
   align-items: center;
   gap: 4px;
   font-size: 10px;
-  color: #6b7280;
+  color: var(--rf-muted);
   margin-top: 0.75rem;
   justify-content: flex-end;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Share Tech Mono', monospace;
 }
 
 .gh-legend-box {
@@ -566,10 +649,11 @@ code {
 
 /* ── RECENT ACTIVITY ── */
 .gh-activity-section {
-  background: #111827;
-  border: 1px solid #1f2937;
-  border-radius: 6px;
+  background: var(--rf-surface);
+  border: 1px solid var(--rf-border);
+  border-radius: var(--rf-radius);
   padding: 1rem;
+  box-shadow: var(--rf-card-shadow);
 }
 
 .gh-profile-wrapper .gh-commits-list {
@@ -583,25 +667,23 @@ code {
   align-items: center;
   gap: 0.6rem;
   padding: 0.45rem 0 !important;
-  border-bottom: 1px solid #1f2937;
+  border-bottom: 1px solid var(--rf-border);
   font-size: 0.76rem;
   margin: 0 !important;
 }
 
-.gh-commit-item:last-child {
-  border-bottom: none;
-}
+.gh-commit-item:last-child { border-bottom: none; }
 
 .gh-commit-dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #ff6d00;
+  background: var(--rf-orange);
   flex-shrink: 0;
 }
 
 .gh-commit-msg {
-  color: #e0e0e0;
+  color: var(--rf-text);
   flex: 1;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -609,28 +691,28 @@ code {
 }
 
 .gh-commit-time {
-  color: #6b7280;
+  color: var(--rf-muted);
   flex-shrink: 0;
   font-size: 0.7rem;
 }
 
-.gh-muted { color: #6b7280; }
+.gh-muted { color: var(--rf-muted); }
 
 /* ── RESPONSIVE ── */
-@media screen and (max-width: 60em) {
+@media screen and (max-width: 960px) {
   .gh-profile-wrapper {
-    flex-direction: column;
-    gap: 1.5rem;
+    grid-template-columns: 1fr;
   }
 
   .gh-sidebar {
-    width: 100%;
+    position: static;
   }
 
   .gh-avatar-box {
-    width: 128px;
-    height: 128px;
-    font-size: 52px;
+    width: 100px;
+    max-width: 100px;
+    font-size: 42px;
+    aspect-ratio: 1;
   }
 
   .gh-pinned-grid {
