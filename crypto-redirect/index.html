@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="2; url=https://plan.robotfantome.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robot Fantôme</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #0d0d0d;
+      color: #e0e0e0;
+      font-family: 'JetBrains Mono', 'Courier New', monospace;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    .container {
+      padding: 2rem;
+    }
+
+    .brand {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #ff6d00;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .tagline {
+      font-size: 0.85rem;
+      color: #6b7280;
+      letter-spacing: 0.15em;
+      margin-bottom: 2.5rem;
+    }
+
+    .message {
+      font-size: 0.9rem;
+      color: #e0e0e0;
+      margin-bottom: 0.75rem;
+    }
+
+    .url {
+      font-size: 0.8rem;
+      color: #ff6d00;
+      margin-bottom: 2rem;
+    }
+
+    .bar {
+      width: 200px;
+      height: 2px;
+      background: #1f2937;
+      margin: 0 auto 2rem;
+      overflow: hidden;
+    }
+
+    .bar-fill {
+      height: 100%;
+      background: #ff6d00;
+      animation: load 2s linear forwards;
+    }
+
+    @keyframes load {
+      from { width: 0%; }
+      to { width: 100%; }
+    }
+
+    a {
+      color: #ff6d00;
+      text-decoration: none;
+      font-size: 0.8rem;
+      border-bottom: 1px solid #ff6d0055;
+      padding-bottom: 2px;
+    }
+
+    a:hover { color: #ff003c; border-color: #ff003c55; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="brand">Robot Fantôme</div>
+    <div class="tagline">absolutely plausible</div>
+    <div class="message">Redirecting you now...</div>
+    <div class="url">plan.robotfantome.com</div>
+    <div class="bar"><div class="bar-fill"></div></div>
+    <a href="https://plan.robotfantome.com">Click here if not redirected</a>
+  </div>
+
+  <script>
+    setTimeout(function() {
+      window.location.href = 'https://plan.robotfantome.com';
+    }, 2000);
+  </script>
+</body>
+</html>
