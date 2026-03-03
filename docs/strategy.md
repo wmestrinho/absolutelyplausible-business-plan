@@ -45,7 +45,8 @@ Most founders have one skill. This is a rare stack:
 - **Deep karting industry access** — works for Thiago Pereira (PCJ), who has 19 years in karting chassis (since 2007). Embedded in the industry at 80+ events/year, 22+ tracks. Knows the people, the pain, the workflow.
 - **Builder** — ships real software (hackFatura for PCJ: zero-cost field app, live in a single session)
 - **AI-native** — runs own agent infrastructure, understands automation deeply
-- **Trilingual: English, Portuguese, Spanish** — the Brazilian karting community is the dominant force in US karting. Being able to pitch, sell, support, and build relationships in Portuguese is an insurmountable moat. No competitor has this without a translator.
+- **Trilingual: English, Portuguese, Spanish** — Brazilian-born, moved to Orlando. The Brazilian karting community is the dominant force in US karting. Pitches, sells, and builds relationships in Portuguese natively. No competitor has this without a translator.
+- **Formal tech credentials** — AS in Information Technology (Purdue Global, 2025) + Back-End Development (The Iron Yard, 2017) + hardware/tech origin at Fatec Sebrae, Brazil (2002). Over 20 years in tech, now with the academic credentials to back it up.
 - **100% OSS + sustainability values** — brand differentiator, not a constraint
 - **Two original music careers** — robot fantôme punk/rock tracks in ALL content (zero licensing costs, unique sonic brand). AND ~10 years in the Bach Festival Choir of Winter Park — one of the finest choral organizations in America. Two completely different musical identities, both genuine.
 - **Zero CAC at the track** — physically at 80+ karting events/year surrounded by potential customers
@@ -227,7 +228,7 @@ For the first 3 months, focus on ONLY these two:
    - Target: indie hackers, bootstrappers, non-technical founders
 
 2. **"The Whole Life"** — The personal brand story that no one else has
-   - Classical choir singer on Monday. Punk rock on the weekend. Karting mechanic on the road. AI builder at night.
+   - Classical choir singer on Monday. Punk rock on the weekend. Karting mechanic on the road. AI builder at night. Culinary arts certificate. Brazilian-born. Trilingual.
    - Behind-the-scenes at karting events, choir rehearsal life, building tools trackside
    - Target: general audience, maker culture, musicians, karting community
    - **This IS the moat.** No one else has this combination. Lean into all of it.

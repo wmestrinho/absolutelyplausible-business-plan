@@ -64,6 +64,20 @@ The contrast between choir and punk is not a contradiction — it's the most hon
 
 ---
 
+## Education
+
+| Period | Credential | Institution |
+|--------|-----------|-------------|
+| 2023–2025 | **Associate of Science — Information Technology** | Purdue Global |
+| 2018–2019 | Culinary Arts Certificate — Chef Training | Pathlight Kitchen · Teacher Assistant · Community Volunteer |
+| 2017 | Back-End Development (Engineer's degree) | The Iron Yard, Orlando · Community Advocate · Interpreter |
+| 2004–2006 | High School Diploma — General Studies | Dr. Phillips High School, Orlando · Battle of the Bands · Academic Excellence Honor Roll · Young Democrats |
+| 2002 | Hardware (Technical Certificate) | Fatec Sebrae, Brazil |
+
+**The tech journey started in Brazil in 2002 — not at The Iron Yard in 2017.** Fatec Sebrae is a Brazilian technical college; this was the origin point before moving to the US.
+
+---
+
 ## Career Background
 
 | Period | Role | Organization | Type |
@@ -74,12 +88,10 @@ The contrast between choir and punk is not a contradiction — it's the most hon
 | 2021–present | Developer Advocate | City Catt | Internship · Remote |
 | 2021–present | Bartender | Premier Events | Seasonal |
 | 2020–2022 | IT Support Specialist | Law Office of John Jordan | Full-time · Hybrid |
-| 2017 | **Back-End Engineering Certification** | The Iron Yard, Orlando | 3-month bootcamp |
 | 2010–2013 | Front Desk Manager | Clarion Hotel Universal | Full-time |
 | 2007–2008 | Valet | Best Western Lake Buena Vista (Disney Springs) | Part-time |
 | 2006–2007 | Front Desk Receptionist | Baymont Inn And Suites Orlando | Part-time |
 | 2006 | Concierge | Wyndham Orlando Resort International Drive | Part-time |
-| 2006 | **HS Diploma** | Dr. Phillips High School, Orlando | — |
 | 2005 | Bellperson | Orlando Marriott | Seasonal |
 
 ### Key Skills Across Career
