@@ -45,6 +45,7 @@ Most founders have one skill. This is a rare stack:
 - **Deep karting industry access** — works for Thiago Pereira (PCJ), who has 19 years in karting chassis (since 2007). Embedded in the industry at 80+ events/year, 22+ tracks. Knows the people, the pain, the workflow.
 - **Builder** — ships real software (hackFatura for PCJ: zero-cost field app, live in a single session)
 - **AI-native** — runs own agent infrastructure, understands automation deeply
+- **Trilingual: English, Portuguese, Spanish** — the Brazilian karting community is the dominant force in US karting. Being able to pitch, sell, support, and build relationships in Portuguese is an insurmountable moat. No competitor has this without a translator.
 - **100% OSS + sustainability values** — brand differentiator, not a constraint
 - **Two original music careers** — robot fantôme punk/rock tracks in ALL content (zero licensing costs, unique sonic brand). AND ~10 years in the Bach Festival Choir of Winter Park — one of the finest choral organizations in America. Two completely different musical identities, both genuine.
 - **Zero CAC at the track** — physically at 80+ karting events/year surrounded by potential customers
@@ -126,6 +127,7 @@ Do NOT start SaaS development before Month 4. Custom builds are the validation.
 ### Target Market
 
 - **Primary:** Traveling karting mechanics in North America (~200-500 active)
+- **Brazilian karting community** — dominant segment in US karting, reachable in Portuguese. Zero extra effort, zero translation cost. No competitor has this access.
 - **Secondary:** Karting teams and shops doing trackside service (~1,000+)
 - **Tertiary:** Other motorsport field mechanics (sprint cars, dirt track, motocross)
 - **Long tail:** Any mobile/field service business
