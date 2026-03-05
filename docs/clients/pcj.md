@@ -1,5 +1,7 @@
 # PCJ / Parazinho Chassis Jig
 
+<div class="internal-badge">Internal Dashboard</div>
+
 ## Client Profile
 
 | Field | Value |
@@ -24,7 +26,7 @@
 PCJ uses an industrial, mechanical palette. See [Brand Guidelines](../brand.md#pcj) for hex values.
 
 !!! warning "Color Rule"
-    All work for PCJ must use the PCJ palette — never the Robot Fantôme editorial palette.
+    All work for PCJ must use the PCJ palette — never the Absolutely Plausible / Robot Fantôme warm palette.
 
 ## Team
 
@@ -39,5 +41,5 @@ PCJ uses an industrial, mechanical palette. See [Brand Guidelines](../brand.md#p
 ## Notes
 
 - Invoice numbering: `PCJ-YYYY-MMDD-001`
-- hackFatura is built by Absolutely Plausible — "Built by Robot Fantôme" footer credit
-- PCJ is the first hackFatura client; architecture becomes the SaaS product for other mechanics
+- hackFatura is built by **Absolutely Plausible** — footer credit reads "Built by Absolutely Plausible"
+- PCJ is the first hackFatura client; architecture is designed to become the generic SaaS product for other mechanics

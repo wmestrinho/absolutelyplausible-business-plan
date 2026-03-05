@@ -1,5 +1,7 @@
 # Roadmap & Weekly Checklist
 
+<div class="internal-badge">Internal Dashboard</div>
+
 > Living tracker. Update by making a commit. History = git log.
 > Check off items as they're done. New week = new section at the top.
 > **Max 5 tasks per week. Revenue tasks first.**
@@ -101,6 +103,9 @@
 ### Absolutely Plausible
 
 - [ ] Portfolio: 2+ case studies
+- [ ] Collect testimonials — ask PCJ / Thiago for hackFatura testimonial after first month of use
+- [ ] Gather social proof: LinkedIn recommendations, client quotes, event photos
+- [ ] Link social media profiles across all public-facing properties
 - [ ] Gumroad #2: "Google Apps Script Business Templates" ($39) — Month 3
 - [ ] Course: "Build Your Business Tools with AI" — ONLY if 500+ newsletter subs
 - [ ] YouTube channel setup — Month 2

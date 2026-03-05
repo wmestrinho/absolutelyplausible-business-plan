@@ -41,18 +41,7 @@ body {
   font-family: 'Share Tech Mono', 'JetBrains Mono', monospace !important;
 }
 
-/* Subtle CRT scanlines — body level */
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background: repeating-linear-gradient(
-    0deg, transparent, transparent 3px,
-    rgba(0,0,0,0.025) 3px, rgba(0,0,0,0.025) 4px
-  );
-  pointer-events: none;
-  z-index: 9998;
-}
+/* Scanlines removed — clean warm palette */
 
 /* ── Header ── */
 .md-header {
@@ -142,7 +131,32 @@ body::before {
   font-size: 0.85rem;
   letter-spacing: 0.06em;
   color: var(--rf-copper) !important;
-  text-shadow: var(--rf-glow-copper);
+}
+
+/* ── Interactive Checklist ── */
+.md-typeset .task-list-item input[type="checkbox"] {
+  cursor: pointer;
+  accent-color: var(--rf-orange);
+}
+
+.md-typeset .task-list-item input[type="checkbox"]:checked + * {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+/* ── Internal Badge ── */
+.internal-badge {
+  display: inline-block;
+  background: var(--rf-overlay);
+  border: 1px solid var(--rf-border);
+  border-left: 3px solid var(--rf-copper);
+  color: var(--rf-copper);
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 0.15rem 0.6rem;
+  border-radius: 0 var(--rf-radius) var(--rf-radius) 0;
+  margin-bottom: 1rem;
 }
 
 .md-typeset a {
@@ -298,17 +312,7 @@ body::before {
   overflow: hidden;
 }
 
-/* Subtle scanlines on avatar */
-.gh-avatar-box::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: repeating-linear-gradient(
-    0deg, transparent, transparent 3px,
-    rgba(0,0,0,0.04) 3px, rgba(0,0,0,0.04) 4px
-  );
-  pointer-events: none;
-}
+/* Avatar scanlines removed — clean look */
 
 .gh-fullname {
   font-size: 1.2rem !important;

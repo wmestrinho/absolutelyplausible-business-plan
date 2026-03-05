@@ -1,6 +1,8 @@
 # hackFatura
 
-> Full field management system built for PCJ / Parazinho Chassis Jig.
+<div class="internal-badge">Internal Dashboard</div>
+
+> The first product built by **Absolutely Plausible** — a full field management system designed for traveling mechanics. PCJ is the launch client.
 
 ---
 

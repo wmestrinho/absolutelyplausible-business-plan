@@ -1,7 +1,9 @@
-# 6-Month Execution Timeline — Robot Fantôme Ventures
+# 6-Month Execution Timeline — Absolutely Plausible
 
-**Start date:** 2026-03-01
-**North star:** $3,000-5,000/mo online income by September 2026
+<span class="internal-badge">Internal Document</span>
+
+**Start date:** TBD — adjusting for current phase
+**North star:** $3,000-5,000/mo online income within 6 months of full execution
 **Hard constraint:** Mechanic work continues. All online work fits in 10-15 hours/week.
 **Review cycle:** Weekly (Sunday) + Monthly (first Sunday)
 
@@ -17,9 +19,12 @@
 
 ---
 
-## Month 1 — March 2026: First Dollars
+## Month 1: First Dollars
 
 > *Theme: "Prove people will pay. Everything else is noise."*
+
+!!! info "Scheduling Note"
+    Month numbers are relative — Month 1 begins when execution starts. Dates will be updated as we establish our rhythm.
 
 ### Week 1 (Mar 1-7) — Validate & Sell
 
@@ -80,7 +85,7 @@
 
 ---
 
-## Month 2 — April 2026: Build the Machine
+## Month 2: Build the Machine
 
 > *Theme: "Systems, not sprints. Repeat what worked in March."*
 
@@ -119,7 +124,7 @@
 
 ---
 
-## Month 3 — May 2026: Real Recurring Revenue
+## Month 3: Real Recurring Revenue
 
 > *Theme: "Retainers are the game. MRR is the goal."*
 
@@ -158,7 +163,7 @@
 
 ---
 
-## Month 4 — June 2026: Double Down on Winners
+## Month 4: Double Down on Winners
 
 > *Theme: "Cut what doesn't work. Pour fuel on what does."*
 
@@ -195,7 +200,7 @@
 
 ---
 
-## Month 5 — July 2026: Leverage
+## Month 5: Leverage
 
 > *Theme: "Work ON the business, not IN it."*
 
@@ -230,7 +235,7 @@
 
 ---
 
-## Month 6 — August 2026: The Flywheel Spins
+## Month 6: The Flywheel Spins
 
 > *Theme: "Everything feeds everything."*
 
@@ -336,3 +341,8 @@ Every Sunday, spend 15 minutes updating:
 ---
 
 *Revenue from Day 1. That's the difference between a plan and a dream.*
+
+---
+
+!!! note "Document Classification"
+    This is an **internal execution timeline** for Absolutely Plausible. Month numbers are relative to execution start, not calendar months.

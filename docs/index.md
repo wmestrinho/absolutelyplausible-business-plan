@@ -8,11 +8,11 @@ hide:
   <!-- ── LEFT SIDEBAR ── -->
   <aside class="gh-sidebar">
 
-    <div class="gh-avatar-box">👻</div>
+    <div class="gh-avatar-box"><img src="https://robotfantome.com/assets/images/wags-circle.jpg" alt="Luiz Wagner Mestrinho" style="width:100%;height:100%;object-fit:cover;border-radius:50%;"></div>
 
     <div class="gh-fullname">Luiz Wagner Mestrinho</div>
     <div class="gh-login">mestrinho</div>
-    <div class="gh-bio">Founder · Mechanic · Dev · Musician · Trilingual</div>
+    <div class="gh-bio">Founder, Absolutely Plausible · Traveling Mechanic · Developer · Musician · Trilingual</div>
 
     <a href="https://www.linkedin.com/in/mestrinho" target="_blank" rel="noopener" class="gh-connect-btn">Connect on LinkedIn</a>
 
@@ -35,6 +35,7 @@ hide:
       <li>📍 Orlando, FL</li>
       <li>🌐 <a href="https://robotfantome.com" target="_blank" rel="noopener">robotfantome.com</a></li>
       <li>💼 <a href="https://linkedin.com/in/mestrinho" target="_blank" rel="noopener">linkedin/mestrinho</a></li>
+      <li>🏢 Founder · <a href="strategy/">Absolutely Plausible</a></li>
       <li>🎵 First Bass · Bach Festival Society</li>
       <li>🏎️ Traveling Mechanic · PCJ Karting</li>
     </ul>
@@ -44,9 +45,12 @@ hide:
   <!-- ── MAIN CONTENT ── -->
   <main class="gh-main">
 
+    <span class="internal-badge">Internal Dashboard</span>
+
     <!-- Tabs -->
     <nav class="gh-tabs-nav">
       <a class="gh-tab-item active" href="#">Overview</a>
+      <a class="gh-tab-item" href="identity/">Identity</a>
       <a class="gh-tab-item" href="strategy/">Strategy</a>
       <a class="gh-tab-item" href="timeline/">Timeline</a>
       <a class="gh-tab-item" href="projects/roadmap/">Roadmap</a>
@@ -61,7 +65,7 @@ hide:
           <span class="gh-card-icon">◈</span>
           <a class="gh-card-name" href="projects/hackfatura/">hackFatura</a>
         </div>
-        <div class="gh-card-desc">Field management system for PCJ karting — race entry, mechanic tracking, and event data.</div>
+        <div class="gh-card-desc">First product by Absolutely Plausible. Field management system for PCJ Karting.</div>
         <div class="gh-card-footer">
           <span class="gh-lang-dot" style="background:#f1e05a"></span>
           <span>JavaScript</span>
@@ -73,7 +77,7 @@ hide:
           <span class="gh-card-icon">◈</span>
           <a class="gh-card-name" href="strategy/">AI Consulting</a>
         </div>
-        <div class="gh-card-desc">Audits $200 · Builds $750–2,500 · Retainers $750–1,500/mo</div>
+        <div class="gh-card-desc">Absolutely Plausible consulting services. Audits, builds, retainers.</div>
         <div class="gh-card-footer">
           <span class="gh-lang-dot" style="background:#3572A5"></span>
           <span>Python</span>

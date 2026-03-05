@@ -1,4 +1,6 @@
-# Business Strategy — Robot Fantôme Ventures
+# Business Strategy — Absolutely Plausible
+
+<span class="internal-badge">Internal Document</span>
 
 > *"A mechanic who codes, builds AI agents, and plays punk rock walks into a market gap..."*
 
@@ -8,33 +10,33 @@
 
 ## Business Structure
 
-**Robot Fantôme** (Absolutely Plausible) is OUR business — the umbrella brand for everything we build, sell, and create. **Founded July 2014. 11+ years running.**
+**Absolutely Plausible** is OUR business — the umbrella brand for everything we build, sell, and create. **Founded July 2014. 11+ years running.** **Robot Fantôme** is Luiz Wagner Mestrinho's music project, operating under the Absolutely Plausible umbrella.
 
 **hackFatura** is a CLIENT PROJECT — built for **Parazinho Chassis Jig (PCJ)**, owned by **Thiago Pereira**. It uses PCJ's brand (black/red/graphite cyberpunk). It is NOT our brand.
 
-| | Robot Fantôme (Us) | Client Projects (hackFatura, etc.) |
+| | Absolutely Plausible (Us) | Client Projects (hackFatura, etc.) |
 |---|---|---|
 | **Brand** | Clean, white, editorial, minimalist | Client's own |
 | **Domain** | robotfantome.com | mech.robotfantome.com (subdomain) |
 | **Revenue** | Consulting, content, SaaS, products | Client deliverable → portfolio + case study |
-| **Music** | Infused in OUR content only | Not in client deliverables |
+| **Music** | Robot Fantôme tracks infused in OUR content only | Not in client deliverables |
 
 See [Brand](brand.md) for full visual identity guide.
 
 ---
 
-## Financial Reality Check
+??? warning "Financial Reality Check (Internal)"
 
-Before strategy, set the floor:
+    Before strategy, set the floor:
 
-| | Amount | Notes |
-|---|---|---|
-| **Monthly survival minimum** | $1,750/mo | Rent + food + bills + car payment + supplies |
-| **Mechanic income** | $750/mo | Current baseline from PCJ |
-| **Online income needed** | $1,500/mo | What the gap is (or what replaces mechanic work) |
-| **Runway without mechanic work** | 0-1 months | No meaningful savings buffer |
+    | | Amount | Notes |
+    |---|---|---|
+    | **Monthly survival minimum** | $1,750/mo | Rent + food + bills + car payment + supplies |
+    | **Mechanic income** | $750/mo | Current baseline from PCJ |
+    | **Online income needed** | $1,500/mo | What the gap is (or what replaces mechanic work) |
+    | **Runway without mechanic work** | 0-1 months | No meaningful savings buffer |
 
-**Rule:** Mechanic work stays — period. PCJ is the foundation, not something to quit. Online revenue is additive income, not a replacement plan. No burning bridges. No gambling.
+    **Rule:** Mechanic work stays — period. PCJ is the foundation, not something to quit. Online revenue is additive income, not a replacement plan. No burning bridges. No gambling.
 
 ---
 
@@ -322,7 +324,7 @@ Add these in Month 4+ only if the first two are working:
 - 35% hackFatura (SaaS growth or custom builds)
 - 30% Content (course if audience exists, otherwise double down on what works)
 
-### The Brand Umbrella: robotfantome.com
+### The Brand Umbrella: Absolutely Plausible
 
 | Page | Purpose | When to Build |
 |------|---------|---------------|
@@ -382,7 +384,7 @@ Add these in Month 4+ only if the first two are working:
 - **Open-source first** — always
 - **Zero-waste stack** — minimal cloud footprint
 - **Build in public** — transparency is the brand
-- **Original music everywhere** — robot fantôme is the soundtrack
+- **Original music everywhere** — Robot Fantôme tracks are the soundtrack
 - **PCJ mechanic work stays** — online revenue is additive
 - **Charge early, charge often** — validate with money
 - **10-15 hours/week** — plan for reality, not fantasy
@@ -418,3 +420,8 @@ On the first Sunday of each month:
 ---
 
 *This strategy is alive. Review monthly. Kill what doesn't work. Double down on what does.*
+
+---
+
+!!! note "Document Classification"
+    This is an **internal strategy document** for Absolutely Plausible. It contains financial projections, pricing strategy, and operational details. The public-facing version lives at the Absolutely Plausible website.

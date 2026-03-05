@@ -11,12 +11,13 @@
 
   const NAV_TABS = [
     { label: 'Overview',  href: '/',           re: /^\/$/ },
+    { label: 'Identity',  href: '/identity/',  re: /\/identity/ },
     { label: 'Strategy',  href: '/strategy/',  re: /\/strategy/ },
     { label: 'Timeline',  href: '/timeline/',  re: /\/timeline/ },
-    { label: 'Identity',  href: '/identity/',  re: /\/identity/ },
     { label: 'Brand',     href: '/brand/',     re: /\/brand/ },
     { label: 'Projects',  href: '/projects/',  re: /\/projects/ },
     { label: 'Clients',   href: '/clients/',   re: /\/clients/ },
+    { label: 'Roadmap',   href: '/projects/roadmap/', re: /\/roadmap/ },
   ];
 
   /* ─── Color scale (warm off-white palette) ─── */
@@ -184,13 +185,13 @@
 
   /* ─── Build sidebar HTML (compact = smaller avatar for content pages) ─── */
   function buildSidebarHTML(compact) {
-    var avatarStyle = compact ? ' style="width:120px;height:120px;font-size:46px"' : '';
+    var avatarStyle = compact ? ' style="width:120px;height:120px"' : '';
     return (
       '<aside class="gh-sidebar">' +
-        '<div class="gh-avatar-box"' + avatarStyle + '>👻</div>' +
+        '<div class="gh-avatar-box"' + avatarStyle + '><img src="https://robotfantome.com/assets/images/wags-circle.jpg" alt="Luiz Wagner Mestrinho" style="width:100%;height:100%;object-fit:cover;border-radius:50%;"></div>' +
         '<div class="gh-fullname">Luiz Wagner Mestrinho</div>' +
         '<div class="gh-login">mestrinho</div>' +
-        '<div class="gh-bio">Founder · Mechanic · Dev · Musician · Trilingual</div>' +
+        '<div class="gh-bio">Founder, Absolutely Plausible · Traveling Mechanic · Developer · Musician · Trilingual</div>' +
         '<a href="https://www.linkedin.com/in/mestrinho" target="_blank" rel="noopener" class="gh-connect-btn">Connect on LinkedIn</a>' +
         '<div class="gh-stats-row">' +
           '<div class="gh-stat"><span class="gh-stat-num">11+</span><span class="gh-stat-label">yrs · AP</span></div>' +
